@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+*body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #F8F9FA;
+}
+
+/* bricolage-grotesque-200-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 200;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-ExtraLight.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-300-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-Light.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-400-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-Regular.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-500-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-Medium.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-600-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-SemiBold.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-700-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-Bold.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+/* bricolage-grotesque-800-normal */
+@font-face {
+    font-display: swap;
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 800;
+    src: url('assets/fonts/bricolage-grotesque/BricolageGrotesque-ExtraBold.ttf');
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+}
+
+.font-bricolage-grotesque {
+    font-family: 'Bricolage Grotesque';
+}

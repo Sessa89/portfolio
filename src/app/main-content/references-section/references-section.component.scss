@@ -1,0 +1,283 @@
+section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 144px;
+    padding-right: 120px;
+    padding-bottom: 144px;
+    padding-left: 120px;
+    gap: 48px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 16px;
+
+    >p {
+        align-self: flex-end;
+        margin: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: #0E1013;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-reference-card {
+    width: 680px;
+    rotate: -4deg;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    background-image: url('./../../../assets/img/references/bg-img_v1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 75px;
+    position: relative;
+    left: 150px;
+    z-index: 2;
+
+    >.first-reference-card_content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #0E1013;
+
+        >p {
+            margin: 0;
+        }
+    }
+
+    >.first-reference-card_author {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        >.name-and-job {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: #0E1013;
+
+            >.name {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            >.job {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19.2px;
+            }
+        }
+
+        >.linkedin-profile {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            gap: 4px;
+
+            >a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: #0E1013;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: #F8F9FA;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        background-image: url('./../../../assets/img/references/ornament_hover.png'),
+            url('./../../../assets/img/references/bg-img_v1.png');
+
+        >.first-reference-card_author {
+            >.name-and-job {
+                color: #F8F9FA;
+            }
+        }
+    }
+}
+
+.second-reference-card {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    background-image: url('./../../../assets/img/references/bg-img_v2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 75px;
+    z-index: 1;
+
+    >.second-reference-card_content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #0E1013;
+
+        >p {
+            margin: 0;
+        }
+    }
+
+    >.second-reference-card_author {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        >.name-and-job {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: #0E1013;
+
+            >.name {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            >.job {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19.2px;
+            }
+        }
+
+        >.linkedin-profile {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            gap: 4px;
+
+            >a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: #0E1013;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: #F8F9FA;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        background-image: url('./../../../assets/img/references/ornament_hover.png'),
+            url('./../../../assets/img/references/bg-img_v1.png');
+        z-index: 3;
+
+        >.second-reference-card_author {
+            >.name-and-job {
+                color: #F8F9FA;
+            }
+        }
+    }
+}
+
+.third-reference-card {
+    width: 680px;
+    rotate: 4deg;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    background-image: url('./../../../assets/img/references/bg-img_v1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 75px;
+    position: relative;
+    right: 150px;
+
+    >.third-reference-card_content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #0E1013;
+
+        >p {
+            margin: 0;
+        }
+    }
+
+    >.third-reference-card_author {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        >.name-and-job {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            color: #0E1013;
+
+            >.name {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            >.job {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19.2px;
+            }
+        }
+
+        >.linkedin-profile {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            gap: 4px;
+
+            >a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 18px;
+                color: #0E1013;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: #F8F9FA;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        background-image: url('./../../../assets/img/references/ornament_hover.png'),
+            url('./../../../assets/img/references/bg-img_v1.png');
+        z-index: 3;
+
+        >.third-reference-card_author {
+            >.name-and-job {
+                color: #F8F9FA;
+            }
+        }
+    }
+}

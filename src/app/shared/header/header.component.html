@@ -1,1 +1,47 @@
-<p>header works!</p>
+<header>
+    <nav>
+        <img src="./../../../assets/img/hero/header/Property 1=Logo Default.svg"
+            onmouseover="this.src='./../../../assets/img/hero/header/Property 1=Logo Hover.svg'"
+            onmouseout="this.src='./../../../assets/img/hero/header/Property 1=Logo Default.svg'" alt="">
+
+        <a href="#about_me" class="animate-top-to-bottom">
+            <span class="font-bricolage-grotesque">About me</span>
+            <img src="./../../../assets/img/hero/header/B.1b.svg" alt="">
+        </a>
+
+        <a href="#skills" class="animate-left-to-right">
+            <span class="font-bricolage-grotesque">Skills</span>
+            <img src="./../../../assets/img/hero/header/B.2.svg" alt="">
+        </a>
+
+        <a href="#projects" class="animate-left-to-right">
+            <span class="font-bricolage-grotesque">Projects</span>
+            <img src="./../../../assets/img/hero/header/B.3.svg" alt="">
+        </a>
+
+        <a href="#contact" class="animate-left-to-right">
+            <span class="font-bricolage-grotesque">Contact</span>
+            <img src="./../../../assets/img/hero/header/B.4.svg" alt="">
+        </a>
+
+        <div class="language-toggle">
+            <div class="language-toggle-item animate-bottom-right-to-top-left" 
+                 (click)="toggleLanguage('EN')" 
+                 [class.active]="isEnglishActive">
+                <span id="lang-en" class="language-toggle-button font-bricolage-grotesque" [class.active]="isEnglishActive">EN</span>
+                <img class="language-toggle-button-frame frame-en" src="./../../../assets/img/hero/header/Toggle 1.svg" alt="EN Hover Frame">
+            </div>
+        
+            <div class="language-toggle-switch" [class.active]="!isEnglishActive">
+                <span class="slider round"></span>
+            </div>
+        
+            <div class="language-toggle-item animate-top-left-to-bottom-right" 
+                 (click)="toggleLanguage('DE')" 
+                 [class.active]="!isEnglishActive">
+                <span id="lang-de" class="language-toggle-button font-bricolage-grotesque" [class.active]="!isEnglishActive">DE</span>
+                <img style="rotate: 180deg;" class="language-toggle-button-frame frame-de" src="./../../../assets/img/hero/header/Toggle 1.svg" alt="DE Hover Frame">
+            </div>
+        </div>
+    </nav>
+</header>

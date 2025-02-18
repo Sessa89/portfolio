@@ -1,0 +1,9 @@
+<div class="project-card">
+    <img [src]="image" [alt]="name" class="project-image">
+    <h3 class="font-bricolage-grotesque project-title">{{ name }}</h3>
+    <p class="font-bricolage-grotesque project-description">{{ description }}</p>
+    <div class="project-tech-stack">
+        <span *ngFor="let tech of technologies" class="project-tech">{{ tech }}</span>
+    </div>
+    <button class="project-details-btn" (click)="navigateToDetails()">Project details</button>
+</div>

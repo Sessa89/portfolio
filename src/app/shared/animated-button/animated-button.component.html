@@ -1,0 +1,13 @@
+<a *ngIf="link; else buttonTemplate" [href]="link" target="_blank" class="animated-button">
+    <span class="text" [innerText]="text"></span>
+    <span class="hover-text" [innerText]="hoverText || text"></span>
+    <img *ngIf="icon" [src]="icon" class="icon" alt="Icon">
+</a>
+
+<ng-template #buttonTemplate>
+    <button class="animated-button">
+        <span class="text" [innerText]="text"></span>
+        <span class="hover-text" [innerText]="hoverText || text"></span>
+        <img *ngIf="icon" [src]="icon" class="icon" alt="Icon">
+    </button>
+</ng-template>

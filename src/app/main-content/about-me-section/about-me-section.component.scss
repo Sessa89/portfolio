@@ -1,0 +1,130 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 144px;
+    padding-right: 120px;
+    padding-bottom: 144px;
+    padding-left: 120px;
+}
+
+.about-me_location {
+    width: 560px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-container {
+    width: 560px;
+    height: 152px;
+    rotate: -4deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./../../../assets/img/about-me/ripped-paper_yellow.png');
+    background-size: cover;
+    position: relative;
+    top: 40px;
+    z-index: 2;
+    gap: 16px;
+
+    >img {
+        width: 40px;
+        height: 40px;
+    }
+
+    >span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #F8F9FA;
+    }
+}
+
+.relocation-container {
+    width: 560px;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./../../../assets/img/about-me/ripped-paper_blue.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    gap: 16px;
+
+    >img {
+        width: 40px;
+        height: 40px;
+    }
+
+    >span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #F8F9FA;
+    }
+}
+
+.remote-container {
+    width: 560px;
+    height: 152px;
+    rotate: 4deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./../../../assets/img/about-me/ripped-paper_orange.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 30px;
+    gap: 16px;
+
+    >img {
+        width: 40px;
+        height: 40px;
+    }
+
+    >span {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #F8F9FA;
+    }
+}
+
+.about-me_content {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.title-container {
+    gap: 16px;
+
+    >p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: #0E1013;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: inherit;
+
+    >p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0E1013;
+    }
+}

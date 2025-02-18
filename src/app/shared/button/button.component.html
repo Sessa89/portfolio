@@ -1,0 +1,14 @@
+<a *ngIf="link; else buttonTemplate" 
+   [href]="link" 
+   [attr.target]="target" 
+   class="btn" 
+   [ngStyle]="{'color': textColor, '--border-color': borderColor}">
+  {{ text }}
+</a>
+
+<ng-template #buttonTemplate>
+  <button class="btn" 
+          [ngStyle]="{'color': textColor, '--border-color': borderColor}">
+    {{ text }}
+  </button>
+</ng-template>

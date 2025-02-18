@@ -1,0 +1,37 @@
+.animated-subheading {
+    position: relative;
+    display: inline-block;
+    font-size: 64px;
+    font-weight: 700;
+    gap: 4px;
+
+    .animation {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .left-to-right {
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    &:hover .left-to-right {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    .center-out {
+        left: 50%;
+        transform: scaleX(0);
+        transform-origin: center;
+    }
+
+    &:hover .center-out {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}

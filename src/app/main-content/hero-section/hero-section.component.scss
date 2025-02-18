@@ -1,0 +1,203 @@
+section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./../../../assets/img/hero/hero/12\ Isolated\ Paper\ Rips\ copia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F8F9FA;
+}
+
+.introduction-box {
+    width: 864.54px;
+    height: 489.96px;
+    // top: 184px;
+    // left: 288px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.greeting {
+    width: 864.54px;
+    height: 269.96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.placeholder_frame609 {
+    width: 552px;
+    height: 240px;
+    top: 29.96px;
+    gap: 32px;
+}
+
+
+.placeholder_hello-name {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    height: 80px;
+
+    >img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        rotate: 180deg;
+        top: 37.9px;
+        left: 142.88px;
+        display: flex;
+        align-self: self-end;
+    }
+
+    >button {
+        width: 145px;
+        height: 40px;
+        border-radius: 100px;
+        border: 1px solid #F8F9FA;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        gap: 10px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+
+        >span {
+            width: 97px;
+            height: 22px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #F8F9FA;
+
+        }
+    }
+
+    :hover {
+        width: 218px;
+        height: 80px;
+
+        > button {
+            width: 218px;
+            background-color: #3355FF;
+            
+            > span {
+                content: "I'M KARL HOFMANN";
+            }
+        }
+    }
+}
+
+.placeholder-img {
+    width: 203.57px;
+    height: 244px;
+    position: absolute;
+    top: 5.82px;
+    left: 646.97px;
+    rotate: 8deg;
+}
+
+.placeholder_frame604 {
+    width: 552px;
+    height: 128px;
+
+    >span {
+        height: 128px;
+        gap: 10px;
+        color: #F8F9FA;
+        font-weight: 700px;
+        font-size: 128px;
+        line-height: 128px;
+        display: inline-block;
+        transition: color 0.3s ease-in-out, text-transform 0.3s ease-in-out;
+    }
+}
+
+.placeholder_frame605 {
+    width: 713px;
+    height: 128px;
+
+    >span {
+        width: 90px;
+        height: 128px;
+        gap: 10px;
+        color: #F8F9FA;
+        font-weight: 700px;
+        font-size: 128px;
+        line-height: 128px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.placeholder_frame604:hover .uppercase:hover {
+    text-transform: lowercase;
+    color: #F7C518;
+}
+
+.placeholder_frame604:hover .lowercase:hover {
+    text-transform: uppercase;
+    color: #F7C518;
+}
+
+.placeholder_frame605:hover .uppercase:hover {
+    text-transform: lowercase;
+    color: #F7C518;
+}
+
+
+
+
+
+
+
+
+
+.social-media-box {
+    width: 40px;
+    height: 136px;
+    top: 654px;
+    left: 72px;
+    gap: 8px;
+
+    background-color: red;
+}
+
+.social-media-box-button {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-box-button-icon {
+    // width: 40px;
+    // height: 40px;
+    border-radius: 100px;
+    border: 1px solid #F8F9FA;
+    padding-top: 12px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+    padding-left: 4px;
+    gap: 10px;
+
+    > img {
+        width: 32px;
+        height: 32px;
+        gap: 4px;
+    }
+}

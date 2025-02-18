@@ -1,0 +1,73 @@
+<section>
+    <div class="section_content">
+        <div class="contact-me_content">
+            <div class="title-container">
+                <p class="font-bricolage-grotesque">CONTACT ME</p>
+
+                <app-animated-subheading class="font-bricolage-grotesque" text="Ready to work together?"
+                    animationType="center-out" animationFile="assets/img/contact-me/Line.png">
+                </app-animated-subheading>
+            </div>
+
+            <div class="content">
+                <p class="font-bricolage-grotesque">
+                    Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                    contributing to your projects with my work.
+                    <br>
+                    Feel free to get in touch with your project details. I'd love the opportunity to help create a
+                    website that meets your needs!
+                </p>
+            </div>
+        </div>
+
+        <div class="formular_content">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+                <div class="formular_container">
+                    <label class="font-bricolage-grotesque" for="name">What's your name?</label>
+                    <input class="font-bricolage-grotesque" #name="ngModel" [(ngModel)]="contactData.name" type="text"
+                        id="name" name="name" placeholder="Your name goes here" required>
+                </div>
+
+                <div class="formular_container">
+                    <label class="font-bricolage-grotesque" for="email">What's your email?</label>
+                    <input class="font-bricolage-grotesque" #email="ngModel" [(ngModel)]="contactData.email"
+                        type="email" id="email" name="email" placeholder="youremail@email.com" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                </div>
+
+                <div class="formular_container">
+                    <label class="font-bricolage-grotesque" for="message">How can I help you?</label>
+                    <input class="font-bricolage-grotesque" #message="ngModel" [(ngModel)]="contactData.message"
+                        id="message" name="message" placeholder="Hello Philip, I am interested in..." required>
+                </div>
+
+                <div class="privacy-policy_container">
+                    <div>
+                        <div>
+                            <div>
+                                <img src="./../../../assets/img/contact-me/Property 1=Default.png" alt="">
+                            </div>
+
+                            <div>
+                                <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as
+                                    outlined.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Please accept the privacy policy.</p>
+                        </div>
+                    </div>
+
+                    <app-button class="font-bricolage-grotesque" text="Send" link="#contact" textColor="black"
+                        borderColor="black"></app-button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</section>

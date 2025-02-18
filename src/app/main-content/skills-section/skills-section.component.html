@@ -1,0 +1,44 @@
+<section>
+    <div class="skills-content">
+        <div class="title-content">
+            <div class="title-container">
+                <p class="font-bricolage-grotesque">MY STACK</p>
+
+                <app-animated-subheading class="font-bricolage-grotesque" text="Skill set" animationType="center-out"
+                    animationFile="assets/img/skills/ornaments/Property 1=linea copia 4.svg">
+                </app-animated-subheading>
+            </div>
+
+            <div class="content">
+                <p class="font-bricolage-grotesque">
+                    I have gained experience in building projects with a variety of
+                    <br>
+                    frontend technologies and concepts. With a strong growth mindset,
+                    <br>
+                    I’m always exploring new areas to enhance my skill set.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-icon-box">
+            <div *ngFor="let skillIcon of skillIcons" class="skill-icon-item">
+                <div class="skill-icon-wrapper">
+                    <img [src]="getSkillIconPath(skillIcon.src, skillIcon.category)" [alt]="skillIcon.name"
+                        class="skill-icon">
+                </div>
+                <span class="skill-icon-label font-bricolage-grotesque">{{ skillIcon.name }}</span>
+            </div>
+        </div>
+
+        <div>
+            <img class="placeholder-sticker"
+                src="./../../../assets/img/skills/ornaments/M003T07560 A stickers set 29Mar23 b.png" alt="">
+
+            <div>
+                <img class="placeholder-sticker-img" src="./../../../assets/img/skills/ornaments/flechha.png" alt="">
+                <span class="placeholder-sticker-span">Pull to peel</span>
+            </div>
+
+        </div>
+    </div>
+</section>

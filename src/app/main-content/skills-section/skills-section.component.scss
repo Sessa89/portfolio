@@ -1,0 +1,145 @@
+section {
+    // width: auto;
+    // height: 800px;
+    background-image: url('./../../../assets/img/skills/bg-img.png');
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F8F9FA;
+    padding-top: 144px;
+    padding-right: 120px;
+    padding-bottom: 144px;
+    padding-left: 120px;
+    // gap: 350px;
+}
+
+.skills-content {
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-content {
+    display: flex;
+    gap: 48px;
+}
+
+.title-container {
+    gap: 8px;
+    color: #F8F9FA;
+
+    >p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: right;
+    }
+}
+
+.content{
+    width: 656px;
+    height: 144px;
+    gap: 10px;
+    background-image: url('./../../../assets/img/skills/skills-papel.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        padding: 32px;
+    }
+}
+
+
+
+
+.skill-icon-box {
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    gap: 32px; // Gleichmäßiger Abstand wie in deinem Screenshot
+
+    .skill-icon-item {
+        width: 90px; // Fixe Breite für den Container
+        height: 110px; // Etwas mehr Platz für Text & Icon
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative; // Wichtig für die absolute Positionierung des Icons
+
+        .skill-icon-wrapper {
+            width: 72px;
+            height: 72px;
+            position: relative; // Damit das Icon sich unabhängig bewegt
+        }
+
+        img {
+            width: 72px;
+            height: 72px;
+            filter: grayscale(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, filter 0.3s ease;
+        }
+
+        .skill-icon-label {
+            margin-top: 8px; // Fixierter Abstand zwischen Icon & Text
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #F8F9FA;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        &:hover {
+            img {
+                width: 56px;
+                height: 56px;
+                filter: grayscale(0%);
+                transform: translate(8px, 8px); // Bewegung nach unten rechts
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.placeholder-sticker {
+    width: 200px;
+    height: 200px;
+    rotate: 8deg;
+    position: relative;
+    top: -200px;
+    left: 500px;
+}
+
+.placeholder-sticker-img {
+    width: 200px;
+    height: 200px;
+    rotate: 8deg;
+    position: relative;
+    top: -200px;
+    left: 500px;
+}
+
+.placeholder-sticker-span {
+    width: 200px;
+    height: 200px;
+    rotate: 8deg;
+    position: relative;
+    top: -200px;
+    left: 500px;
+    color: white;
+}
