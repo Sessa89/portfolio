@@ -18,9 +18,13 @@ section {
 .contact-me_content {
     width: 560px;
     gap: 48px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-container {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     color: #F8F9FA;
 
@@ -106,9 +110,49 @@ section {
             }
         }
 
-        > .privacy-policy_container {
+        >.privacy-policy_container {
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
+            gap: 16px;
+
+            >.privacy-policy_content {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .privacy-policy_text {
+                    display: flex;
+                    gap: 8px;
+
+                    >p {
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #F8F9FA;
+
+                        >a {
+                            text-decoration: none;
+                            color: #3355FF;
+                        }
+                    }
+                }
+
+                .privacy-policy_warning {
+                    >p {
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        color: #E61C40;
+                    }
+                }
+            }
+
+            app-button {
+                align-self: end;
+            }
         }
     }
 }

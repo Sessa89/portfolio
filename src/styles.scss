@@ -84,3 +84,91 @@
 .font-bricolage-grotesque {
     font-family: 'Bricolage Grotesque';
 }
+
+/* kalam-300-normal */
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/kalam/Kalam-Light.ttf');
+}
+
+/* kalam-700-normal */
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/kalam/Kalam-Bold.ttf');
+}
+
+/* kalam-400-normal */
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/kalam/Kalam-Regular.ttf');
+}
+
+.font-kalam {
+    font-family: 'Kalam';
+}
+
+/* karla-200-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 200;
+    src: url('assets/fonts/karla/Karla-ExtraLight.ttf');
+}
+
+/* karla-300-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/karla/Karla-Light.ttf');
+}
+
+/* karla-400-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/karla/Karla-Regular.ttf');
+}
+
+/* karla-500-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/karla/Karla-Medium.ttf');
+}
+
+/* karla-600-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/karla/Karla-SemiBold.ttf');
+}
+
+/* karla-700-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/karla/Karla-Bold.ttf');
+}
+
+/* karla-800-normal */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    src: url('assets/fonts/karla/Karla-ExtraBold.ttf');
+}
+
+.font-karla {
+    font-family: 'Karla';
+}
