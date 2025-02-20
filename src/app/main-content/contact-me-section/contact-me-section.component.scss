@@ -9,7 +9,6 @@ section {
 .section_content {
     padding-top: 144px;
     padding-right: 120px;
-    padding-bottom: 56px;
     padding-left: 120px;
     display: flex;
     justify-content: space-between;
@@ -135,6 +134,10 @@ section {
                         >a {
                             text-decoration: none;
                             color: #3355FF;
+
+                            &:hover {
+                                color: #F7C518;
+                            }
                         }
                     }
                 }
