@@ -32,7 +32,10 @@ footer {
         font-size: 18px;
         line-height: 21.6px;
         position: relative;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-start;
         padding: 10px;
         border: none;
         overflow: hidden;

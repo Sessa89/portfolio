@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './animated-button.component.scss'
 })
 export class AnimatedButtonComponent {
-  @Input() text: string = 'Button';
+  @Input() text?: string;
   @Input() hoverText?: string;
   @Input() icon?: string;
   @Input() link?: string;

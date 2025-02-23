@@ -1,41 +1,79 @@
-.animated-button {
-    position: relative;
-    display: inline-flex;
+.animated-button-without-text-on-hover {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 12px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #F8F9FA;
-    text-align: center;
-    border-radius: 100px;
-    border: 1px solid #F8F9FA;
-    background: transparent;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
     text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background 0.3s, color 0.3s;
-    white-space: nowrap;
 
-    &:hover {
-        background: #3355FF;
-        width: auto;
-    }
-
-    /*
-    .text {
-        position: absolute;
-        opacity: 1;
-        transition: opacity 0.3s;
-    }
-    */
-
-    .hover-text {
-        position: absolute;
+    .icon {
+        width: 32px;
+        height: 32px;
+        transform-origin: center;
         opacity: 0;
+        transform: translateX(0) rotate(0);
+        transition: transform 0.5s linear, opacity 0.5s ease-in;
+    }
+
+    &:hover .icon {
+        transform: translateX(38px) rotate(360deg);
+        opacity: 1;
+    }
+
+    .text {
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        color: #F8F9FA;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    &:hover .text {
+        background-color: #3355FF;
+        border-radius: 100px;
+    }
+}
+
+.animated-button-with-text-on-hover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+
+    .icon {
+        display: flex;
+        align-self: flex-end;
+        width: 40px;
+        height: 40px;
+        transform-origin: center;
+        opacity: 0;
+        transform: translateX(0) rotate(0);
+        transition: transform 0.5s linear, opacity 0.5s ease-in;
+    }
+
+    &:hover .icon {
+        transform: translateX(140px) rotate(360deg);
+        opacity: 1;
+    }
+
+    .text, .hover-text {
+        border: 1px solid #F8F9FA;
+        border-radius: 100px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        color: #F8F9FA;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21.6px;
         transition: opacity 0.3s;
     }
 
@@ -43,23 +81,23 @@
         opacity: 0;
     }
 
+    .hover-text {
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        white-space: nowrap;
+        border: 1px solid #F8F9FA;
+        border-radius: 100px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        background: #3355FF;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
     &:hover .hover-text {
         opacity: 1;
-    }
-
-    .icon {
-        width: 24px;
-        height: 24px;
-        background-color: transparent;
-        position: absolute;
-        top: -40px;
-        right: -10px;
-        width: 24px;
-        height: 24px;
-        transition: transform 0.3s ease-out;
-    }
-
-    &:hover .icon {
-        transform: translateY(40px);
     }
 }
