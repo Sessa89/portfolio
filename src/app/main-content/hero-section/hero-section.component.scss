@@ -171,33 +171,31 @@ section {
 
 .social-media-box {
     width: 40px;
-    height: 136px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     top: 654px;
     left: 72px;
     gap: 8px;
-
-    background-color: red;
 }
 
 .social-media-box-button {
-    width: 40px;
-    height: 40px;
-}
-
-.social-media-box-button-icon {
-    // width: 40px;
-    // height: 40px;
-    border-radius: 100px;
-    border: 1px solid #F8F9FA;
-    padding-top: 12px;
-    padding-right: 4px;
-    padding-bottom: 12px;
-    padding-left: 4px;
+    display: flex;
+    justify-content: center;
     gap: 10px;
+    text-decoration: none;
 
     > img {
         width: 32px;
         height: 32px;
+        border-radius: 100px;
+        border: 1px solid #F8F9FA;
+        padding: 4px;
+        display: flex;
         gap: 4px;
+
+        &:hover {
+            background-color: #3355FF;
+        }
     }
 }
