@@ -20,25 +20,25 @@
             </div>
         </div>
 
-        <div class="skill-icon-box">
-            <div *ngFor="let skillIcon of skillIcons" class="skill-icon-item">
-                <div class="skill-icon-wrapper">
-                    <img [src]="getSkillIconPath(skillIcon.src, skillIcon.category)" [alt]="skillIcon.name"
-                        class="skill-icon">
+        <div class="placeholder_skills">
+            <div class="skill-icon-box">
+                <div *ngFor="let skillIcon of skillIcons" class="skill-icon-item">
+                    <div class="skill-icon-wrapper">
+                        <img [src]="getSkillIconPath(skillIcon.src, skillIcon.category)" [alt]="skillIcon.name"
+                            class="skill-icon">
+                    </div>
+                    <span class="skill-icon-label font-bricolage-grotesque">{{ skillIcon.name }}</span>
                 </div>
-                <span class="skill-icon-label font-bricolage-grotesque">{{ skillIcon.name }}</span>
             </div>
-        </div>
-
-        <div>
-            <img class="placeholder-sticker"
-                src="./../../../assets/img/skills/ornaments/M003T07560 A stickers set 29Mar23 b.png" alt="">
-
-            <div>
+    
+            <div class="placeholder-sticker">
                 <img class="placeholder-sticker-img" src="./../../../assets/img/skills/ornaments/flechha.png" alt="">
-                <span class="placeholder-sticker-span">Pull to peel</span>
+                <span class="font-kalam placeholder-sticker-span">
+                    Pull to
+                    <br>
+                    peel
+                </span>
             </div>
-
-        </div>
+        </div>        
     </div>
 </section>

@@ -112,34 +112,36 @@ section {
 }
 
 
-
+.placeholder_skills {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+}
 
 
 
 .placeholder-sticker {
     width: 200px;
     height: 200px;
+    background-image: url("./../../../assets/img/skills/ornaments/M003T07560\ A\ stickers\ set\ 29Mar23\ b.png");
+    background-size: cover;
     rotate: 8deg;
-    position: relative;
-    top: -200px;
-    left: 500px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .placeholder-sticker-img {
-    width: 200px;
-    height: 200px;
-    rotate: 8deg;
-    position: relative;
-    top: -200px;
-    left: 500px;
+    height: 40px;
 }
 
 .placeholder-sticker-span {
-    width: 200px;
-    height: 200px;
-    rotate: 8deg;
-    position: relative;
-    top: -200px;
-    left: 500px;
-    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #F8F9FA;
+    text-align: center;
 }
