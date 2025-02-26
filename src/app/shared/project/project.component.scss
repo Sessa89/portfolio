@@ -1,7 +1,85 @@
-.project-image {
+.project-card {
     width: 560px;
     height: auto;
-    object-fit: cover;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
+
+    >.project-card_image-container {
+        position: relative;
+        width: 560px;
+        height: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.25s ease-out;
+        }
+
+        >app-button {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            z-index: 2;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to top,
+                rgba(#0E1013, 0.5),
+                rgba(#0E1013, 0)
+            );
+            opacity: 0;
+            transition: opacity 0.25s ease-out;
+            z-index: 1;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+
+            &::before {
+                opacity: 1;
+            }
+
+            app-button {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    >.project-card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        >h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        >p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21.6px;
+            text-align: justify;
+        }
+    }
 }

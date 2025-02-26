@@ -1,9 +1,16 @@
 <div class="project-card">
-    <img [src]="image" [alt]="name" class="project-image">
-    <h3 class="font-bricolage-grotesque project-title">{{ name }}</h3>
-    <p class="font-bricolage-grotesque project-description">{{ description }}</p>
-    <div class="project-tech-stack">
-        <span *ngFor="let tech of technologies" class="project-tech">{{ tech }}</span>
+    <div class="project-card_image-container">
+        <img [src]="image" [alt]="name">
+
+        <app-button class="font-bricolage-grotesque" text="Project details" link="" textColor="white"
+            borderColor="white"></app-button>
     </div>
-    <button class="project-details-btn" (click)="navigateToDetails()">Project details</button>
+    
+    <div class="project-card_content">
+        <h3 class="font-bricolage-grotesque">{{ name }}</h3>
+        <p class="font-bricolage-grotesque">{{ description }}</p>
+        <div class="project-tech-stack">
+            <span *ngFor="let tech of technologies" class="project-tech">{{ tech }}</span>
+        </div>
+    </div>
 </div>

@@ -1,27 +1,23 @@
 <section>
-    <div class="placeholder-intro">
-        <div>
-            <span class="font-bricolage-grotesque">
-                MY CRAFT
-            </span>
+    <div class="projects_content">
+        <div class="title-container">
+            <p class="font-bricolage-grotesque">MY CRAFT</p>
 
             <app-animated-subheading class="font-bricolage-grotesque" text="Projects" animationType="left-to-right"
                 animationFile="assets/img/projects/ornaments/linea naranja b.png">
             </app-animated-subheading>
         </div>
 
-
-        <p class="font-bricolage-grotesque">
-            Take a look at some of my projects and see my front-end skills in action. Each project highlights my
-            approach to building responsive, user-friendly designs with efficient code.
+        <p class="font-bricolage-grotesque content-container">
+            Encourage people to take a look and interact with your projects.
+            Highlight your approach to creating responsive, user-friendly projects with efficient code.
         </p>
     </div>
 
     <div class="projects-container">
         <div *ngFor="let project of projects" class="project-item">
             <app-project [name]="project.name" [description]="project.description"
-                [image]="getProjectImagePath(project.image, project.category)" [technologies]="project.technologies"
-                [detailsRoute]="project.detailsRoute">
+                [image]="getProjectImagePath(project.image, project.category)" [detailsRoute]="project.detailsRoute">
             </app-project>
         </div>
     </div>
