@@ -1,0 +1,168 @@
+section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./../../../assets/img/shared/note-book-paper.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.container_go-back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 72px;
+    padding-right: 72px;
+    cursor: pointer;
+
+    >span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    &:hover {
+        span {
+            color: #F87A55;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    > .box_left {
+        width: 488px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .content_box {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            .description_container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+    
+                h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin: 0;
+                }
+    
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    margin: 0;
+                    text-align: justify;
+                }
+            }
+    
+            .implementation-details_container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+    
+                h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin: 0;
+                }
+    
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    margin: 0;
+                    text-align: justify;
+                }
+            }
+
+            .duration_container {
+                display: flex;
+                gap: 8px;
+    
+                h3 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    margin: 0;
+                    text-align: justify;
+                }
+    
+                span {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    margin: 0;
+                    text-align: justify;
+                }
+            }
+
+            .skills_container {
+                display: flex;
+                gap: 16px;
+
+                .skill_box {
+                    display: flex;
+                    gap: 4px;
+                }
+            }
+        }
+    }
+
+    > .box_right {
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        img {
+            width: 100%;
+            height: 400px;
+            border-radius: 20px;
+        }
+
+        .button_box {
+            display: flex;
+            gap: 32px;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.container_next-project {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-left: 72px;
+    padding-right: 72px;
+    cursor: pointer;
+
+    >span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #F8F9FA;
+    }
+
+    &:hover {
+        span {
+            color: #F7C518;
+        }
+    }
+}
