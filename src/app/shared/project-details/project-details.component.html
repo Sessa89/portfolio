@@ -1,65 +1,56 @@
 <section>
     <app-header></app-header>
 
-    <div class="container_go-back">
+    <div class="container_go-back" (click)="goBack()">
         <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
         <span class="font-bricolage-grotesque">Go Back</span>
     </div>
 
-    <div class="content">
+    <div class="content" *ngIf="project">
         <div class="box_left">
-            <app-animated-subheading class="font-bricolage-grotesque" text="About me" animationType="left-to-right"
-                animationFile="assets/img/about-me/ornament_transition.svg">
+            <app-animated-subheading class="font-bricolage-grotesque" text="{{ project.name }}"
+                animationType="left-to-right" animationFile="assets/img/about-me/ornament_transition.svg">
             </app-animated-subheading>
 
             <div class="content_box">
                 <div class="description_container">
                     <h3 class="font-bricolage-grotesque">Description</h3>
-                    <p class="font-bricolage-grotesque">Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa
-                        to fight against the crazy hen.</p>
+                    <p class="font-bricolage-grotesque">{{ project.description }}</p>
                 </div>
-    
+
                 <div class="implementation-details_container">
                     <h3 class="font-bricolage-grotesque">Implementation Details</h3>
-                    <p class="font-bricolage-grotesque">Short text that describes your role or the workflow for this specific project. Let a recruiter know
-                        more about your knowledge and ability to work independently or collaboratively in a structured way.
-                    </p>
+                    <p class="font-bricolage-grotesque">{{ project.implementationDetails }}</p>
                 </div>
-    
+
                 <div class="duration_container">
-                    <h3 class="font-bricolage-grotesque">Duration:</h3><span class="font-bricolage-grotesque">3 weeks</span>
+                    <h3 class="font-bricolage-grotesque">Duration:</h3><span class="font-bricolage-grotesque">{{
+                        project.duration }}</span>
                 </div>
-    
+
                 <div class="skills_container">
-                    <div class="skill_box">
-                        <img src="" alt=""><span class="font-bricolage-grotesque">JavaScript</span>
-                    </div>
-
-                    <div class="skill_box">
-                        <img src="" alt=""><span class="font-bricolage-grotesque">HTML</span>
-                    </div>
-
-                    <div class="skill_box">
-                        <img src="" alt=""><span class="font-bricolage-grotesque">CSS</span>
+                    <div class="skill_box" *ngFor="let skill of project.skills">
+                        <img [src]="skill.skillIcon" [alt]="skill.skillName + ' icon'">
+                        <span class="font-bricolage-grotesque">{{ skill.skillName }}</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="box_right">
-            <img src="" alt="">
+            <img [src]="'assets/img/projects/' + project.category + '/' + project.image" [alt]="project.name">
 
             <div class="button_box">
-                <app-button class="font-bricolage-grotesque" text="GitHub" link="project-details"
-                    textColor="white" borderColor="white"></app-button>
+                <app-button class="font-bricolage-grotesque" text="GitHub" link="{{ project.gitHubLink }}"
+                    target="_blank" textColor="white" borderColor="white"></app-button>
 
-                <app-button class="font-bricolage-grotesque" text="Live Test" link="project-details"
+                <app-button class="font-bricolage-grotesque" text="Live Test" link="project-details" target="_blank"
                     textColor="white" borderColor="white"></app-button>
             </div>
         </div>
     </div>
 
-    <div class="container_next-project">
+    <div class="container_next-project" (click)="goToNextProject()">
         <span class="font-bricolage-grotesque">Next Project</span>
         <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
     </div>

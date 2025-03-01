@@ -36,14 +36,15 @@ footer {
         align-items: center;
         justify-content: center;
         align-self: flex-start;
-        padding: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
         border: none;
         overflow: hidden;
 
         >img {
             position: absolute;
             top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
         }

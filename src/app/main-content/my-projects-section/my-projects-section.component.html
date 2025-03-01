@@ -16,12 +16,12 @@
 
     <div class="projects-container">
         <div *ngFor="let project of projects" class="project-item">
-            <app-project [name]="project.name" [description]="project.description"
-                [image]="getProjectImagePath(project.image, project.category)" [detailsRoute]="project.detailsRoute">
-            </app-project>
+            <app-project
+                [name]="project.name"
+                [description]="project.description"
+                [image]="getProjectImagePath(project.image, project.category)"
+                [path]="'/projects/' + project.path"
+            ></app-project>
         </div>
     </div>
-
-
-
 </section>

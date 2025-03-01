@@ -118,7 +118,13 @@ section {
 
                 .skill_box {
                     display: flex;
+                    align-items: center;
                     gap: 4px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
         }

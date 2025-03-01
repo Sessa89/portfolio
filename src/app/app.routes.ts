@@ -6,7 +6,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 export const routes: Routes = [
     { path: '', component: MainContentComponent },
-    { path: 'project-details', component: ProjectDetailsComponent },
+    { path: 'projects/:projectPath', component: ProjectDetailsComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'legal-notice', component: LegalNoticeComponent },
 ];

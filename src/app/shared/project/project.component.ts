@@ -14,12 +14,12 @@ export class ProjectComponent {
   @Input() name!: string;
   @Input() description!: string;
   @Input() image!: string;
-  @Input() technologies!: string[];
-  @Input() detailsRoute!: string;
+  @Input() skills!: string[];
+  @Input() path!: string;
 
   constructor(private router: Router) {}
 
   navigateToDetails() {
-    this.router.navigate([this.detailsRoute]);
+    this.router.navigate([this.path]);
   }
 }
