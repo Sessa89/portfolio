@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimatedSubheadingComponent } from '../../shared/animated-subheading/animated-subheading.component';
 import { FormsModule, NgForm } from '@angular/forms';
-
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { AnimatedButtonComponent } from '../../shared/animated-button/animated-button.component';
 import { ButtonComponent } from '../../shared/button/button.component';
