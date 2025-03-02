@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimatedSubheadingComponent } from '../../shared/animated-subheading/animated-subheading.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills-section',
   standalone: true,
-  imports: [CommonModule, AnimatedSubheadingComponent],
+  imports: [CommonModule, AnimatedSubheadingComponent, TranslateModule],
   templateUrl: './skills-section.component.html',
   styleUrl: './skills-section.component.scss'
 })

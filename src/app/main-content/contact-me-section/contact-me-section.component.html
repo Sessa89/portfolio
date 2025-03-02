@@ -2,21 +2,16 @@
     <div class="section_content">
         <div class="contact-me_content">
             <div class="title-container">
-                <p class="font-bricolage-grotesque">CONTACT ME</p>
+                <p class="font-bricolage-grotesque">{{ 'contact.title' | translate }}</p>
 
-                <app-animated-subheading class="font-bricolage-grotesque" text="Ready to work together?"
+                <app-animated-subheading class="font-bricolage-grotesque" [text]="'contact.subheading' | translate"
                     animationType="center-out" animationFile="assets/img/contact-me/Line.png">
                 </app-animated-subheading>
             </div>
 
             <div class="content">
                 <p class="font-bricolage-grotesque">
-                    Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                    contributing to your projects with my work.
-                    <br>
-                    <br>
-                    Feel free to get in touch with your project details. I'd love the opportunity to help create a
-                    website that meets your needs!
+                    {{ 'contact.content' | translate }}
                 </p>
             </div>
         </div>
@@ -25,22 +20,22 @@
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                 <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="name">What's your name?</label>
+                    <label class="font-bricolage-grotesque" for="name">{{ 'contact.form.nameLabel' | translate }}</label>
                     <input class="font-bricolage-grotesque" #name="ngModel" [(ngModel)]="contactData.name" type="text"
-                        id="name" name="name" placeholder="Your name goes here" required>
+                        id="name" name="name" [placeholder]="'contact.form.namePlaceholder' | translate" required>
                 </div>
 
                 <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="email">What's your email?</label>
+                    <label class="font-bricolage-grotesque" for="email">{{ 'contact.form.emailLabel' | translate }}</label>
                     <input class="font-bricolage-grotesque" #email="ngModel" [(ngModel)]="contactData.email"
-                        type="email" id="email" name="email" placeholder="youremail@email.com" required
+                        type="email" id="email" name="email" [placeholder]="'contact.form.emailPlaceholder' | translate" required
                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
 
                 <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="message">How can I help you?</label>
+                    <label class="font-bricolage-grotesque" for="message">{{ 'contact.form.messageLabel' | translate }}</label>
                     <input class="font-bricolage-grotesque" #message="ngModel" [(ngModel)]="contactData.message"
-                        id="message" name="message" placeholder="Hello Philip, I am interested in..." required>
+                        id="message" name="message" [placeholder]="'contact.form.messagePlaceholder' | translate" required>
                 </div>
 
                 <div class="privacy-policy_container">
@@ -50,17 +45,16 @@
                                 <img src="./../../../assets/img/contact-me/Property 1=Default.png" alt="">
                             </div>
 
-                            <p class="font-bricolage-grotesque">I've read the <a href="privacy-policy">privacy policy</a> and agree to the processing of my data as
-                                outlined.</p>
+                            <p class="font-bricolage-grotesque" [innerHTML]="'contact.form.privacyText' | translate"></p>
 
                         </div>
 
                         <div class="privacy-policy_warning">
-                            <p class="font-karla">Please accept the privacy policy.</p>
+                            <p class="font-karla">{{ 'contact.form.privacyWarning' | translate }}</p>
                         </div>
                     </div>
 
-                    <app-button class="font-bricolage-grotesque" text="Send" link="#contact" textColor="black"
+                    <app-button class="font-bricolage-grotesque" [text]="'contact.form.send' | translate" link="#contact" textColor="black"
                         borderColor="black"></app-button>
 
                 </div>

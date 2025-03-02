@@ -6,8 +6,8 @@
             <div class="placeholder_frame609">
                 <app-animated-button
                     class="font-bricolage-grotesque"
-                    text="Hello World"
-                    hoverText="I'M PHILIP BAUMGÄRTNER"
+                    [text]="'hero.animatedButton.text' | translate"
+                    [hoverText]="'hero.animatedButton.hoverText' | translate"
                     icon="./../../assets/img/hero/hero/waving_hand.svg">
                 </app-animated-button>
 
@@ -41,7 +41,7 @@
             <span class="uppercase font-bricolage-grotesque">R</span>
         </div>
 
-        <app-button class="font-bricolage-grotesque" text="Get in Touch" link="#contact" textColor="white"
+        <app-button class="font-bricolage-grotesque" [text]="'hero.buttonText' | translate" link="#contact" textColor="white"
             borderColor="white"></app-button>
     </div>
 

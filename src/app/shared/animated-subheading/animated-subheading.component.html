@@ -1,4 +1,4 @@
 <div class="animated-subheading">
-    <span class="text">{{ text }}</span>
+    <span class="text">{{ text | translate }}</span>
     <img *ngIf="animationFile" [src]="animationFile" class="animation" [ngClass]="animationType" />
 </div>

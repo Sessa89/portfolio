@@ -2,41 +2,35 @@
     <div class="about-me_location">
         <div class="location-container">
             <img src="./../../assets/img/about-me/icon_location.svg" alt="">
-            <span class="font-bricolage-grotesque">Based in Postbauer-Heng</span>
+            <span class="font-bricolage-grotesque">{{ 'about.location' | translate }}</span>
         </div>
 
         <div class="relocation-container">
             <img src="./../../../assets/img/about-me/icon_relocation.svg" alt="">
-            <span class="font-bricolage-grotesque">Open to relocate</span>
+            <span class="font-bricolage-grotesque">{{ 'about.relocation' | translate }}</span>
         </div>
 
         <div class="remote-container">
             <img src="./../../../assets/img/about-me/icon_remote.svg" alt="">
-            <span class="font-bricolage-grotesque">Open to work remote</span>
+            <span class="font-bricolage-grotesque">{{ 'about.remote' | translate }}</span>
         </div>
     </div>
 
     <div class="about-me_content">
         <div class="title-container">
-            <p class="font-bricolage-grotesque">WHO’S PHILIP?</p>
+            <p class="font-bricolage-grotesque">{{ 'about.title' | translate }}</p>
 
-            <app-animated-subheading class="font-bricolage-grotesque" text="About me" animationType="left-to-right"
+            <app-animated-subheading class="font-bricolage-grotesque" [text]="'about.subheading' | translate" animationType="left-to-right"
                 animationFile="assets/img/about-me/ornament_transition.svg">
             </app-animated-subheading>
         </div>
 
         <div class="content-container">
             <p class="font-bricolage-grotesque">
-                Hi there! I'm Philip, a frontend developer passionate about creating intuitive and efficient digital
-                experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in
-                transforming
-                complex concepts into visually appealing and functional web solutions.
-                <br>
-                <br>
-                Let’s collaborate and build something remarkable together!
+                {{ 'about.content' | translate }}
             </p>
 
-            <app-button class="font-bricolage-grotesque" text="Let's talk" link="#contact" textColor="black"
+            <app-button class="font-bricolage-grotesque" [text]="'about.buttonText' | translate" link="#contact" textColor="black"
                 borderColor="black"></app-button>
         </div>
     </div>

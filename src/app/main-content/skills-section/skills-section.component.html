@@ -2,20 +2,16 @@
     <div class="skills-content">
         <div class="title-content">
             <div class="title-container">
-                <p class="font-bricolage-grotesque">MY STACK</p>
+                <p class="font-bricolage-grotesque">{{ 'skills.title' | translate }}</p>
 
-                <app-animated-subheading class="font-bricolage-grotesque" text="Skill set" animationType="center-out"
+                <app-animated-subheading class="font-bricolage-grotesque" [text]="'skills.subheading' | translate" animationType="center-out"
                     animationFile="assets/img/skills/ornaments/Property 1=linea copia 4.svg">
                 </app-animated-subheading>
             </div>
 
             <div class="content">
                 <p class="font-bricolage-grotesque">
-                    I have gained experience in building projects with a variety of
-                    <br>
-                    frontend technologies and concepts. With a strong growth mindset,
-                    <br>
-                    I’m always exploring new areas to enhance my skill set.
+                    {{ 'skills.content' | translate }}
                 </p>
             </div>
         </div>
@@ -34,9 +30,7 @@
             <div class="placeholder-sticker">
                 <img class="placeholder-sticker-img" src="./../../../assets/img/skills/ornaments/flechha.png" alt="">
                 <span class="font-kalam placeholder-sticker-span">
-                    Pull to
-                    <br>
-                    peel
+                    {{ 'skills.buttonText' | translate }}
                 </span>
             </div>
         </div>        

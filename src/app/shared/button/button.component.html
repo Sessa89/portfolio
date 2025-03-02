@@ -3,12 +3,12 @@
    [attr.target]="target" 
    class="btn" 
    [ngStyle]="{'color': textColor, '--border-color': borderColor}">
-  {{ text }}
+   {{ text | translate }}
 </a>
 
 <ng-template #buttonTemplate>
   <button class="btn" 
           [ngStyle]="{'color': textColor, '--border-color': borderColor}">
-    {{ text }}
+    {{ text | translate }}
   </button>
 </ng-template>

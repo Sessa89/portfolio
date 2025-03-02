@@ -1,12 +1,12 @@
 <a *ngIf="link; else buttonTemplate" [href]="link" target="_blank" class="animated-button-without-text-on-hover">
     <img *ngIf="icon" [src]="icon" class="icon" alt="Icon">
-    <span class="text" [innerText]="text"></span>
+    <span class="text" [innerText]="(text || '') | translate"></span>
 </a>
 
 <ng-template #buttonTemplate>
     <button class="animated-button-with-text-on-hover">
         <img *ngIf="icon" [src]="icon" class="icon" alt="Icon">
-        <span class="text" [innerText]="text"></span>
-        <span class="hover-text" [innerText]="hoverText || text"></span>
+        <span class="text" [innerText]="(text || '') | translate"></span>
+        <span class="hover-text" [innerText]="hoverText ? (hoverText | translate) : ((text || '') | translate)"></span>
     </button>
 </ng-template>

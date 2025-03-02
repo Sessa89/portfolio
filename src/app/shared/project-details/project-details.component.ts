@@ -4,11 +4,12 @@ import { HeaderComponent } from '../header/header.component';
 import { AnimatedSubheadingComponent } from '../animated-subheading/animated-subheading.component';
 import { ButtonComponent } from '../button/button.component';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-details',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, AnimatedSubheadingComponent, ButtonComponent],
+  imports: [CommonModule, HeaderComponent, AnimatedSubheadingComponent, ButtonComponent, TranslateModule],
   templateUrl: './project-details.component.html',
   styleUrl: './project-details.component.scss'
 })
@@ -55,8 +56,8 @@ export class ProjectDetailsComponent implements OnInit {
         {
           path: 'pokedex',
           name: 'Pokédex',
-          description: 'Pokédex is an app that allows users to search and filter Pokémon with real-time API data.',
-          implementationDetails: 'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+          description: 'projects.pokedex.description',
+          implementationDetails: 'projects.pokedex.implementationDetails',
           duration: '3 weeks',
           skills: ['HTML', 'CSS', 'JavaScript', 'Rest-Api'],
           image: 'pokedex.png',
@@ -66,8 +67,8 @@ export class ProjectDetailsComponent implements OnInit {
         {
           path: 'join',
           name: 'Join',
-          description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-          implementationDetails: 'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+          description: 'projects.join.description',
+          implementationDetails: 'projects.join.implementationDetails',
           duration: '3 weeks',
           image: 'join.png',
           skills: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
@@ -77,8 +78,8 @@ export class ProjectDetailsComponent implements OnInit {
         {
           path: 'el-pollo-loco',
           name: 'El Pollo Loco',
-          description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-          implementationDetails: 'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+          description: 'projects.el-pollo-loco.description',
+          implementationDetails: 'projects.el-pollo-loco.implementationDetails',
           duration: '3 weeks',
           image: 'el_pollo_loco.png',
           skills: ['HTML', 'CSS', 'JavaScript', 'OOP'],
@@ -88,8 +89,8 @@ export class ProjectDetailsComponent implements OnInit {
         {
           path: 'dabubble',
           name: 'DABubble',
-          description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization..',
-          implementationDetails: 'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+          description: 'projects.dabubble.description',
+          implementationDetails: 'projects.dabubble.implementationDetails',
           duration: '3 weeks',
           image: 'dabubble.png',
           skills: ['HTML', 'CSS', 'JavaScript', 'OOP'],
@@ -105,8 +106,8 @@ export class ProjectDetailsComponent implements OnInit {
         {
           path: 'api-service',
           name: 'API Service',
-          description: 'A RESTful API service built with Node.js and Express for managing user authentication and data processing.',
-          implementationDetails: 'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+          description: 'projects.api-service.description',
+          implementationDetails: 'projects.api-service.implementationDetails',
           duration: '3 weeks',
           image: 'api-service.png',
           skills: ['Node.js', 'Express', 'MongoDB'],

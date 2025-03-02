@@ -1,0 +1,190 @@
+{
+    "header": {
+        "about": "About me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "animatedButton": {
+            "text": "Hello World",
+            "hoverText": "I'M PHILIP BAUMGÄRTNER"
+        },
+        "developer": "FRONTEND DEVELOPER",
+        "buttonText": "Get in Touch"
+    },
+    "about": {
+        "location": "Based in Postbauer-Heng",
+        "relocation": "Open to relocate",
+        "remote": "Open to work remote",
+        "title": "WHO’S PHILIP?",
+        "subheading": "About me",
+        "content": "Hi there! I'm Philip, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions. Let’s collaborate and build something remarkable together!",
+        "buttonText": "Let's talk"
+    },
+    "skills": {
+        "title": "MY STACK",
+        "subheading": "Skill set",
+        "content": "I have gained experience in building projects with a variety of frontend technologies and concepts. With a strong growth mindset, I’m always exploring new areas to enhance my skill set.",
+        "buttonText": "Pull to peel"
+    },
+    "projects": {
+        "title": "MY CRAFT",
+        "subheading": "Projects",
+        "content": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code.",
+        "pokedex": {
+            "description": "Pokédex is an app that allows users to search and filter Pokémon with real-time API data.",
+            "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+        },
+        "join": {
+            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+            "implementationDetails": "Short text that describes your role or the workflow for this specific project..."
+        },
+        "el-pollo-loco": {
+            "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+            "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+        },
+        "dabubble": {
+            "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization..",
+            "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+        },
+        "api-service": {
+            "description": "A RESTful API service built with Node.js and Express for managing user authentication and data processing.",
+            "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+        }
+    },
+    "project": {
+        "buttonText": "Project details"
+    },
+    "projectDetails": {
+        "goBack": "Go Back",
+        "description": "Description",
+        "implementationDetails": "Implementation Details",
+        "duration": "Duration:",
+        "nextProject": "Next Project"
+    },
+    "references": {
+        "title": "IN THEIR WORDS:",
+        "subheading": "Colleagues' Thoughts",
+        "first-reference": {
+            "content": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+            "job": "Frontend Developer"
+        },
+        "second-reference": {
+            "content": "It was a great pleasure to work with Karl. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+            "job": "Frontend Developer"
+        },
+        "third-reference": {
+            "content": "It was a great pleasure to work with Karl. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+            "job": "Frontend Developer"
+        },
+        "profile": "Profile"
+    },
+    "contact": {
+        "title": "CONTACT ME",
+        "subheading": "Ready to work together?",
+        "content": "Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work. Feel free to get in touch with your project details. I'd love the opportunity to help create a website that meets your needs!",
+        "form": {
+            "nameLabel": "What's your name?",
+            "namePlaceholder": "Your name goes here",
+            "emailLabel": "What's your email?",
+            "emailPlaceholder": "youremail@email.com",
+            "messageLabel": "How can I help you?",
+            "messagePlaceholder": "Hello Philip, I am interested in...",
+            "privacyText": "I've read the <a href='privacy-policy'>privacy policy</a> and agree to the processing of my data as outlined.",
+            "privacyWarning": "Please accept the privacy policy.",
+            "send": "Send"
+        }
+    },
+    "footer": {
+        "legalNotice": "Legal Notice"
+    },
+    "legalNotice": {
+        "heading": "Legal Notice",
+        "contact": "Contact",
+        "phone": "Phone:",
+        "email": "Mail:",
+        "source": "Source:"
+    },
+    "privacyPolicy": {
+        "heading": "Privacy Policy",
+        "section1": {
+            "title": "1. Data protection at a glance",
+            "generalInformation": {
+                "title": "General information",
+                "content": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is all data with which you can be personally identified. You can find detailed information on the subject of data protection in our data protection declaration listed under this text."
+            },
+            "dataCollection": {
+                "title": "Data collection on this website",
+                "responsible": {
+                    "title": "Who is responsible for data collection on this website?",
+                    "content": "The data processing on this website is carried out by the website operator. You can find his contact details in the section \"Information on the responsible party\" in this data protection declaration."
+                },
+                "howToCollect": {
+                    "title": "How do we collect your data?",
+                    "content": "On the one hand, your data is collected when you communicate it to us. This may, for example, be data that you enter in a contact form. Other data is collected automatically or with your consent when you visit the website by our IT systems. This is primarily technical data (e.g. Internet browser, operating system or time of page access). This data is collected automatically as soon as you enter this website."
+                },
+                "usage": {
+                    "title": "What do we use your data for?",
+                    "content": "Some of the data is collected to ensure that the website is provided without errors. Other data can be used to analyze your user behavior. If contracts can be concluded or initiated via the website, the transmitted data will also be processed for contract offers, orders or other order inquiries."
+                },
+                "rights": {
+                    "title": "What rights do you have regarding your data?",
+                    "content": "You have the right to obtain information about the origin, recipient and purpose of your stored personal data free of charge at any time. You also have the right to request the correction or deletion of this data. If you have given your consent to data processing, you can revoke this consent at any time for the future. You also have the right to request the restriction of the processing of your personal data in certain circumstances. Furthermore, you have the right to lodge a complaint with the competent supervisory authority. You can contact us at any time with any questions about this or other issues relating to data protection."
+                }
+            }
+        },
+        "section2": {
+            "title": "2. General information and mandatory information",
+            "dataProtection": {
+                "title": "Data protection",
+                "content": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration. When you use this website, various personal data is collected. Personal data is data that can be used to identify you personally. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this is done. We would like to point out that data transmission over the Internet (e.g. when communicating by e-mail) may have security gaps. Complete protection of data against access by third parties is not possible."
+            },
+            "responsibleBody": {
+                "title": "Note on the responsible body",
+                "content": "The responsible body for data processing on this website is: Philip Baumgärtner, Jurastraße 6, 92353 Postbauer-Heng, Phone: 09188 / 57 77 120, Mail: philip_baumgaertner@hotmail.de. The responsible body is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.)."
+            },
+            "storagePeriod": {
+                "title": "Storage period",
+                "content": "Unless a more specific storage period is specified in this data protection declaration, your personal data will remain with us until the purpose for data processing no longer applies. If you make a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g. retention periods under tax or commercial law); in the latter case, deletion will take place once these reasons no longer apply."
+            },
+            "legalBasis": {
+                "title": "General information on the legal basis for data processing on this website",
+                "content": "If you have consented to data processing, we will process your personal data on the basis of Art. 6 Para. 1 lit. a GDPR or Art. 9 Para. 2 lit. a GDPR, provided that special categories of data are processed in accordance with Art. 9 Para. 1 GDPR. In the case of explicit consent to the transfer of personal data to third countries, data processing will also be carried out on the basis of Art. 49 Para. 1 lit. a GDPR. If you have consented to the storage of cookies or to access information on your device (e.g. via device fingerprinting), data processing will also be carried out on the basis of Section 25 Para. 1 TDDDG. Consent can be revoked at any time. If your data is required to fulfil the contract or to carry out precontractual measures, we will process your data on the basis of Art. 6 Para. 1 lit. b GDPR. Furthermore, we will process your data if it is required to fulfil a legal obligation on the basis of Art. 6 Para. 1 lit. c GDPR. Data processing may also be carried out on the basis of our legitimate interest in accordance with Art. 6 (1)(f) GDPR. The relevant legal bases in each individual case are provided in the following paragraphs of this data protection declaration."
+            },
+            "recipients": {
+                "title": "Recipients of personal data",
+                "content": "We only pass on personal data to external parties if this is necessary to fulfill a contract, if we are legally obliged to do so (e.g. passing on data to tax authorities), if we have a legitimate interest in the transfer according to Art. 6 Para. 1 lit. f GDPR or if another legal basis allows the data to be passed on. When using contract processors, we only pass on our customers' personal data on the basis of a valid contract for order processing. In the case of joint processing, a contract for joint processing is concluded. As part of our business activities, we work with various external parties. In some cases, this also requires the transmission of personal data to these external parties."
+            },
+            "revocation": {
+                "title": "Revocation of your consent to data processing",
+                "content": "Many data processing operations are only possible with your express consent. You can revoke your consent at any time. The legality of the data processing carried out up to the time of revocation remains unaffected by the revocation."
+            },
+            "directMarketing": {
+                "title": "Right to object to data collection in special cases and to direct advertising (Art. 21 GDPR)",
+                "content": "IF THE DATA PROCESSING IS BASED ON ART. 6 PARAGRAPH 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH ANY PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN PROVE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS OR THE PROCESSING IS FOR THE PURPOSE OF ASSERTING, EXERCISING OR DEFENDING LEGAL CLAIMS (OBJECTION ACCORDING TO ART. 21 PARA. 1 GDPR). IF YOUR PERSONAL DATA IS PROCESSED TO CARRY OUT DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR DATA AT ANY TIME CONCERNING PERSONAL DATA FOR THE PURPOSE OF SUCH ADVERTISING. THIS ALSO APPLIES TO PROFILING IN SO FAR AS IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR THE PURPOSES OF DIRECT MARKETING (OBJECTION ACCORDING TO ART. 21 PARA. 2 GDPR)."
+            },
+            "complaint": {
+                "title": "Right to lodge a complaint with the competent supervisory authority",
+                "content": "In the event of violations of the GDPR, those affected have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, place of work or place of the alleged infringement. The right of appeal is without prejudice to other administrative or judicial remedies."
+            },
+            "dataPortability": {
+                "title": "Right to data portability",
+                "content": "You have the right to have data that we process automatically on the basis of your consent or in fulfillment of a contract handed over to you or to a third party in a common, machine-readable format. If you request that the data be transferred directly to another responsible party, this will only be done if it is technically feasible."
+            },
+            "informationCorrectionDeletion": {
+                "title": "Information, correction and deletion",
+                "content": "Within the framework of the applicable legal provisions, you have the right at any time to obtain free information about your stored personal data, its origin and recipient and the purpose of data processing and, if applicable, a right to correction or deletion of this data. You can contact us at any time with any questions about this or other questions on the subject of personal data."
+            },
+            "restriction": {
+                "title": "Right to restriction of processing",
+                "content": "You have the right to request the restriction of the processing of your personal data. You can contact us at any time to do so. The right to restrict processing exists in the following cases: <ul><li>If you dispute the accuracy of your personal data stored by us, we usually need time to check this. For the duration of the check, you have the right to request that the processing of your personal data be restricted.</li><li>If the processing of your personal data was/is unlawful, you can request the restriction of data processing instead of deletion.</li><li>If we no longer need your personal data, but you require it to exercise, defend or assert legal claims, you have the right to request that the processing of your personal data be restricted instead of deleted.</li><li>If you have lodged an objection in accordance with Art. 21 Para. 1 GDPR, a balance must be struck between your interests and ours. As long as it is not yet clear whose interests prevail, you have the right to request that the processing of your personal data be restricted.</li></ul>"
+            },
+            "sslEncryption": {
+                "title": "SSL or TLS encryption",
+                "content": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the website operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the address line of the browser changes from \"http://\" to \"https://\" and by the lock symbol in your browser line. If SSL or TLS encryption is activated, the data you send to us cannot be read by third parties.",
+                "source": "Source:"
+            }
+        }
+    }
+}

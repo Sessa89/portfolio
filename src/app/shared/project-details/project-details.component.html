@@ -3,7 +3,7 @@
 
     <div class="container_go-back" (click)="goBack()">
         <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
-        <span class="font-bricolage-grotesque">Go Back</span>
+        <span class="font-bricolage-grotesque">{{ 'projectDetails.goBack' | translate }}</span>
     </div>
 
     <div class="content" *ngIf="project">
@@ -14,17 +14,17 @@
 
             <div class="content_box">
                 <div class="description_container">
-                    <h3 class="font-bricolage-grotesque">Description</h3>
-                    <p class="font-bricolage-grotesque">{{ project.description }}</p>
+                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.description' | translate }}</h3>
+                    <p class="font-bricolage-grotesque">{{ project.description | translate }}</p>
                 </div>
 
                 <div class="implementation-details_container">
-                    <h3 class="font-bricolage-grotesque">Implementation Details</h3>
-                    <p class="font-bricolage-grotesque">{{ project.implementationDetails }}</p>
+                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.implementationDetails' | translate }}</h3>
+                    <p class="font-bricolage-grotesque">{{ project.implementationDetails | translate }}</p>
                 </div>
 
                 <div class="duration_container">
-                    <h3 class="font-bricolage-grotesque">Duration:</h3><span class="font-bricolage-grotesque">{{
+                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.duration' | translate }}</h3><span class="font-bricolage-grotesque">{{
                         project.duration }}</span>
                 </div>
 
@@ -51,7 +51,7 @@
     </div>
 
     <div class="container_next-project" (click)="goToNextProject()">
-        <span class="font-bricolage-grotesque">Next Project</span>
+        <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
         <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
     </div>
 </section>
