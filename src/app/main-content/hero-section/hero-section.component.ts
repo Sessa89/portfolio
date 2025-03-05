@@ -14,41 +14,4 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeroSectionComponent {
 
-  /*
-  const translations = {
-    en: "Frontend DEVELOPER",
-    de: "Frontend ENTWICKLER"
-  };
-  
-  function updateTitle(language) {
-  const titleContainer = document.querySelector(".developer-title");
-  titleContainer.innerHTML = "";
-
-  const text = translations[language].split("");
-
-  text.forEach(char => {
-    const span = document.createElement("span");
-    if (char === " ") {
-      span.classList.add("spacer");
-    } else {
-      span.textContent = char;
-    }
-    titleContainer.appendChild(span);
-  });
-  }
-
-  document.getElementById("language-toggle").addEventListener("click", function () {
-    const newLang = this.getAttribute("data-active") === "en" ? "de" : "en";
-    this.setAttribute("data-active", newLang);
-    updateTitle(newLang);
-  });
-
-
-  updateTitle("en");
-  */
-
-
-
-
-
 }
