@@ -4,8 +4,8 @@
             <div class="title-container">
                 <p class="font-bricolage-grotesque">{{ 'skills.title' | translate }}</p>
 
-                <app-animated-subheading class="font-bricolage-grotesque" [text]="'skills.subheading' | translate" animationType="center-out"
-                    animationFile="assets/img/skills/ornaments/Property 1=linea copia 4.svg">
+                <app-animated-subheading class="font-bricolage-grotesque" [text]="'skills.subheading' | translate"
+                    animationType="center-out" animationFile="assets/img/skills/ornaments/Property 1=linea copia 4.svg">
                 </app-animated-subheading>
             </div>
 
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="placeholder_skills">
+        <div class="skills">
             <div class="skill-icon-box">
                 <div *ngFor="let skillIcon of skillIcons" class="skill-icon-item">
                     <div class="skill-icon-wrapper">
@@ -26,13 +26,34 @@
                     <span class="skill-icon-label font-bricolage-grotesque">{{ skillIcon.name }}</span>
                 </div>
             </div>
-    
-            <div class="placeholder-sticker">
-                <img class="placeholder-sticker-img" src="./../../../assets/img/skills/ornaments/flechha.png" alt="">
-                <span class="font-kalam placeholder-sticker-span">
-                    {{ 'skills.buttonText' | translate }}
-                </span>
+
+            <div #stickerPeel class="sticker-container">
+                <div class="sticker-container_top">
+                    <img src="./../../../assets/img/skills/sticker/flechha.png"
+                        alt="">
+                    <span class="font-kalam">
+                        {{ 'skills.stickerTextTop' | translate }}
+                    </span>
+                </div>
+
+                <div class="sticker-container_bottom">
+                    <div class="sticker-container_bottom-content">
+                        <span class="font-bricolage-grotesque" [innerHTML]="'skills.stickerTextBottom' | translate"></span>
+
+                        <div class="further-skills-container">
+                            <div class="further-skills-container_skill">
+                                <img src="./../../../assets/img/skills/sticker/React.svg" alt="">
+                                <span class="font-bricolage-grotesque">React</span>
+                            </div>
+
+                            <div class="further-skills-container_skill">
+                                <img src="./../../../assets/img/skills/sticker/Vue Js.svg" alt="">
+                                <span class="font-bricolage-grotesque">Vue Js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>        
+        </div>
     </div>
 </section>

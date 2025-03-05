@@ -1,6 +1,6 @@
 section {
     // width: auto;
-    // height: 800px;
+    height: 800px;
     background-image: url('./../../../assets/img/skills/bg-img.png');
     background-size: cover;
     // background-repeat: no-repeat;
@@ -37,7 +37,7 @@ section {
     }
 }
 
-.content{
+.content {
     width: 656px;
     height: 144px;
     gap: 10px;
@@ -45,7 +45,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
 
-    > p {
+    >p {
         margin: 0;
         font-weight: 400;
         font-size: 18px;
@@ -54,30 +54,27 @@ section {
     }
 }
 
-
-
-
 .skill-icon-box {
     width: 640px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
-    gap: 32px; // Gleichmäßiger Abstand wie in deinem Screenshot
+    gap: 32px;
 
     .skill-icon-item {
-        width: 90px; // Fixe Breite für den Container
-        height: 110px; // Etwas mehr Platz für Text & Icon
+        width: 90px;
+        height: 110px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        position: relative; // Wichtig für die absolute Positionierung des Icons
+        position: relative;
 
         .skill-icon-wrapper {
             width: 72px;
             height: 72px;
-            position: relative; // Damit das Icon sich unabhängig bewegt
+            position: relative;
         }
 
         img {
@@ -91,7 +88,7 @@ section {
         }
 
         .skill-icon-label {
-            margin-top: 8px; // Fixierter Abstand zwischen Icon & Text
+            margin-top: 8px;
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
@@ -105,44 +102,118 @@ section {
                 width: 56px;
                 height: 56px;
                 filter: grayscale(0%);
-                transform: translate(8px, 8px); // Bewegung nach unten rechts
+                transform: translate(8px, 8px);
             }
         }
     }
 }
 
-
-.placeholder_skills {
+.skills {
     display: flex;
     justify-content: flex-end;
     gap: 80px;
 }
 
-
-
-.placeholder-sticker {
+.sticker-container {
     width: 200px;
     height: 200px;
-    background-image: url("./../../../assets/img/skills/ornaments/M003T07560\ A\ stickers\ set\ 29Mar23\ b.png");
-    background-size: cover;
     rotate: 8deg;
-    margin-right: 10px;
+    perspective: 1000px;
+    user-select: none;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.sticker-container_top {
+    background-image: url("./../../../assets/img/skills/sticker/M003T07560\ A\ stickers\ set\ 29Mar23\ b.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform-origin: bottom left;
+    z-index: 2;
+    // transform: rotateX(0deg) rotateY(0deg);
+
+    img {
+        height: 40px;
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        color: #F8F9FA;
+        text-align: center;
+        white-space: pre-wrap;
+    }
 }
 
-.placeholder-sticker-img {
-    height: 40px;
+.sticker-container_bottom {
+    background-image: url("./../../../assets/img/skills/sticker/alternativa.png");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform-origin: bottom left;
+    z-index: 1;
 }
 
-.placeholder-sticker-span {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    color: #F8F9FA;
-    text-align: center;
-    white-space: pre-wrap;
+.sticker-container_bottom-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    gap: 8px;
+
+    span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #F8F9FA;
+        text-align: center;
+    }
+
+    .further-skills-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .further-skills-container_skill {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 17.28px;
+                color: #F8F9FA;
+                text-align: center;
+            }
+        }
+    }
 }

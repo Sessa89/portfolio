@@ -10,47 +10,52 @@
             "text": "Hallo Welt",
             "hoverText": "ICH BIN PHILIP BAUMGÄRTNER"
         },
-        "developer": "FRONTEND ENTWICKLER",
         "buttonText": "Kontakt aufnehmen"
     },
     "about": {
         "location": "Wohnhaft in Postbauer-Heng",
-        "relocation": "Offen für Umzug",
+        "relocation": "Offen umzuziehen",
         "remote": "Offen für Remote-Arbeit",
         "title": "WER IST PHILIP?",
         "subheading": "Über mich",
         "content": "Hallo! Ich bin Philip, ein Frontend-Entwickler, der sich leidenschaftlich für die Schaffung intuitiver und effizienter digitaler Erlebnisse einsetzt. Mit einer natürlichen Problemlösungsmentalität und einem Auge für Details bin ich darauf spezialisiert, komplexe Konzepte in visuell ansprechende und funktionale Weblösungen zu verwandeln. Lassen Sie uns zusammenarbeiten und gemeinsam etwas Bemerkenswertes bauen!",
-        "buttonText": "Lass uns reden"
+        "buttonText": "Lassen Sie uns reden"
     },
     "skills": {
         "title": "MEIN STACK",
-        "subheading": "Skills",
-        "content": "Ich habe Erfahrungen darin gesammelt, Projekte mit verschiedenen Frontend-Technologien und Konzepten zu realisieren. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um mein Skillset zu erweitern.",
-        "buttonText": "Hier abziehen"
+        "subheading": "Skillset",
+        "content": "Während meiner Weiterbildung konnte ich wegen meiner vielfältigen Projekte Erfahrungen in unterschiedlichen Technologien und Konzepten im Bereich der Frontend-Entwicklung sammeln.",
+        "stickerTextTop": "Hier abziehen",
+        "stickerTextBottom": "Ich interessiere<br>mich auch für:"
     },
     "projects": {
         "title": "MEIN HANDWERK",
         "subheading": "Projekte",
-        "content": "Ermutigen Sie Menschen, einen Blick auf Ihre Projekte zu werfen und mit ihnen zu interagieren. Heben Sie Ihren Ansatz hervor, reaktionsschnelle, benutzerfreundliche Projekte mit effizientem Code zu erstellen.",
+        "content": "Überzeugen Sie sich selbst von meinen bisherigen Projekten, welche sowohl benutzerfreundlich gestaltet als auch mit einem effizienten Code geschrieben worden sind.",
         "pokedex": {
-            "description": "Pokédex ist eine App, die es den Nutzern ermöglicht, Pokémon mit Echtzeit-API-Daten zu suchen und zu filtern.",
-            "implementationDetails": "Kurzer Text, der deine Rolle oder den Ablauf dieses Projekts beschreibt..."
+            "description": "Bei dieser App handelt es sich um einen Pokédex basierend auf dem japanischen Manga/Anime (Comic/Zeichentrick) Pokémon. Der Pokédex dient hierbei als Register bzw. Übersicht aller Pokémon, die es den Nutzern ermöglicht, Pokémon mit Echtzeit-API-Daten zu suchen und zu filtern.",
+            "implementationDetails": "Bei diesem Projekt handelte es sich um ein Soloprojekt. Das komplette Projekt wurde dementsprechend von mir allein gestaltet und umgesetzt.",
+            "projectType": "Soloprojekt"
         },
         "join": {
-            "description": "Task Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer und Kategorien zu.",
-            "implementationDetails": "Kurzer Text, der deine Rolle oder den Ablauf dieses Projekts beschreibt..."
+            "description": "Bei dieser App handelt es sich um einen Task Manager, inspiriert vom Kanban-System. Hierbei können Aufgaben erstellt und organisiert werden, in dem sie per Drag & Drop Nutzern und Kategorien zugewiesen werden können.",
+            "implementationDetails": "Bei diesem Projekt handelte es sich um ein Gruppenprojekt, dessen Aufgaben und Workflow mit einem Kanban-Board organisiert wurden. Hierbei wurde die Funktionalität des Logins als Nutzer bzw. Gasts, der Registrierung und der Bereich für die Kontakte von mir umgesetzt.",
+            "projectType": "Gruppenprojekt"
         },
         "el-pollo-loco": {
-            "description": "Jump, Run und Wurf-Spiel basierend auf objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-            "implementationDetails": "Kurzer Text, der deine Rolle oder den Ablauf dieses Projekts beschreibt..."
+            "description": "Bei dieser App handelt es sich um ein Jump and Run Spiel basierend auf einem objektorientierten Ansatz. Hierbei hilfst Du Pepe Münzen und Tabascosoße zu sammeln, um am Ende gegen das verrückte Huhn zu kämpfen.",
+            "implementationDetails": "Bei diesem Projekt handelte es sich um ein Soloprojekt. Das komplette Projekt wurde dementsprechend von mir allein gestaltet und umgesetzt.",
+            "projectType": "Soloprojekt"
         },
         "dabubble": {
             "description": "Bei dieser App handelt es sich um eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Oberfläche, Echtzeit-Messaging und einer robusten Kanalorganisation.",
-            "implementationDetails": "Kurzer Text, der deine Rolle oder den Ablauf dieses Projekts beschreibt..."
+            "implementationDetails": "PLATZHALTER",
+            "projectType": "Gruppenprojekt"
         },
         "api-service": {
             "description": "Ein RESTful API-Dienst, der mit Node.js und Express für die Verwaltung der Benutzerauthentifizierung und Datenverarbeitung erstellt wurde.",
-            "implementationDetails": "Kurzer Text, der deine Rolle oder den Ablauf dieses Projekts beschreibt..."
+            "implementationDetails": "PLATZHALTER",
+            "projectType": "Soloprojekt"
         }
     },
     "project": {
@@ -60,7 +65,7 @@
         "goBack": "Zurück",
         "description": "Beschreibung",
         "implementationDetails": "Umsetzungsdetails",
-        "duration": "Dauer:",
+        "projectType": "Projekttyp:",
         "nextProject": "Nächstes Projekt"
     },
     "references": {
@@ -81,19 +86,19 @@
         "profile": "Profil"
     },
     "contact": {
-        "title": "KONTAKTIER MICH",
+        "title": "KONTAKTIEREN SIE MICH",
         "subheading": "Bereit, gemeinsam zu arbeiten?",
-        "content": "Kontaktiere mich über dieses Formular. Ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen. Zögere nicht, dich mit den Details deines Projekts bei mir zu melden. Ich würde mich freuen, eine Website zu erstellen, die deinen Bedürfnissen entspricht!",
+        "content": "Konnten meine bisherigen Projekte Sie überzeugen? Dann kontaktieren Sie mich über dieses Formular. Ich freue mich darauf von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meinen Fähigkeiten einen Teil zu Ihrem Projekt beitragen zu können.",
         "form": {
-            "nameLabel": "Wie heißt du?",
-            "namePlaceholder": "Dein Name hier",
-            "emailLabel": "Wie lautet deine E-Mail?",
-            "emailPlaceholder": "deineemail@example.com",
-            "messageLabel": "Wie kann ich dir helfen?",
+            "nameLabel": "Wie heißen Sie?",
+            "namePlaceholder": "Bitte tragen Sie hier Ihren Namen ein",
+            "emailLabel": "Wie lautet Ihre E-Mailadresse?",
+            "emailPlaceholder": "maxmustermann@musterstadt.com",
+            "messageLabel": "Wie kann ich Ihnen helfen?",
             "messagePlaceholder": "Hallo Philip, ich interessiere mich für...",
             "privacyText": "Ich habe die <a href='privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-            "privacyWarning": "Bitte akzeptiere die Datenschutzerklärung.",
-            "send": "Senden"
+            "privacyWarning": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+            "buttonText": "Senden"
         }
     },
     "footer": {

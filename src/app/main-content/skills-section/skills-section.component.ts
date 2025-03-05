@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AnimatedSubheadingComponent } from '../../shared/animated-subheading/animated-subheading.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -10,7 +10,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skills-section.component.html',
   styleUrl: './skills-section.component.scss'
 })
-export class SkillsSectionComponent {
+export class SkillsSectionComponent implements AfterViewInit {
+
+  @ViewChild('stickerPeel') stickerPeel!: ElementRef;
+
   private categorizedSkillIcons = [
     {
       category: 'frontend',
@@ -26,7 +29,7 @@ export class SkillsSectionComponent {
         { name: 'Rest-Api', src: 'Property 1=Rest-Api.svg', enabled: true },
         { name: 'Scrum', src: 'Property 1=Scrum.svg', enabled: true },
         { name: 'Material Design', src: 'Property 1=Material Design.svg', enabled: true },
-        { name: 'Vue.js', src: 'Property 1=Vue.Js.svg', enabled: true }
+        { name: 'Vue.js', src: 'Property 1=Vue.Js.svg', enabled: false }
       ]
     },
     {
@@ -69,5 +72,103 @@ export class SkillsSectionComponent {
 
   getSkillIconPath(icon: string, category: string): string {
     return `assets/img/skills/${category}/${icon}`;
+  }
+
+  ngAfterViewInit(): void {
+    new Peel(this.stickerPeel.nativeElement);
+  }
+}
+
+class Peel {
+  private top: HTMLElement;
+  private bottom: HTMLElement;
+
+  private isDragging = false;
+  private lastX = 0;
+  private lastY = 0;
+
+  private cumulativeRotationX = 0;
+  private cumulativeRotationY = 0;
+
+  private MAX_ANGLE = 120;
+
+  constructor(private container: HTMLElement) {
+    this.top = this.container.querySelector('.sticker-container_top') as HTMLElement;
+    this.bottom = this.container.querySelector('.sticker-container_bottom') as HTMLElement;
+
+    this.addEventListeners();
+  }
+
+  private addEventListeners() {
+    this.container.addEventListener('mousedown', (e) => this.onMouseDown(e));
+    window.addEventListener('mousemove', (e) => this.onMouseMove(e));
+    window.addEventListener('mouseup', () => this.onMouseUp());
+
+    this.container.addEventListener('touchstart', (e) => this.onTouchStart(e), { passive: false });
+    window.addEventListener('touchmove', (e) => this.onTouchMove(e), { passive: false });
+    window.addEventListener('touchend', () => this.onTouchEnd());
+  }
+
+  private onMouseDown(e: MouseEvent) {
+    this.isDragging = true;
+    this.lastX = e.clientX;
+    this.lastY = e.clientY;
+  }
+
+  private onMouseMove(e: MouseEvent) {
+    if (!this.isDragging) return;
+    e.preventDefault();
+
+    const dx = e.clientX - this.lastX;
+    const dy = e.clientY - this.lastY;
+
+    this.lastX = e.clientX;
+    this.lastY = e.clientY;
+
+    this.setPeelPosition(dx, dy);
+  }
+
+  private onMouseUp() {
+    this.isDragging = false;
+  }
+
+  private onTouchStart(e: TouchEvent) {
+    this.isDragging = true;
+    const t = e.touches[0];
+    this.lastX = t.clientX;
+    this.lastY = t.clientY;
+  }
+
+  private onTouchMove(e: TouchEvent) {
+    if (!this.isDragging) return;
+    e.preventDefault();
+
+    const t = e.touches[0];
+    const dx = t.clientX - this.lastX;
+    const dy = t.clientY - this.lastY;
+
+    this.lastX = t.clientX;
+    this.lastY = t.clientY;
+
+    this.setPeelPosition(dx, dy);
+  }
+
+  private onTouchEnd() {
+    this.isDragging = false;
+  }
+
+  private setPeelPosition(dx: number, dy: number) {
+    const rotateXDelta = -dy * 0.5;
+    const rotateYDelta = dx * 0.5;
+
+    this.cumulativeRotationX += rotateXDelta;
+    this.cumulativeRotationY += rotateYDelta;
+
+    if (this.cumulativeRotationX > this.MAX_ANGLE) this.cumulativeRotationX = this.MAX_ANGLE;
+    if (this.cumulativeRotationX < -this.MAX_ANGLE) this.cumulativeRotationX = -this.MAX_ANGLE;
+    if (this.cumulativeRotationY > this.MAX_ANGLE) this.cumulativeRotationY = this.MAX_ANGLE;
+    if (this.cumulativeRotationY < -this.MAX_ANGLE) this.cumulativeRotationY = -this.MAX_ANGLE;
+
+    this.top.style.transform = `rotateX(${this.cumulativeRotationX}deg) rotateY(${this.cumulativeRotationY}deg)`;
   }
 }
