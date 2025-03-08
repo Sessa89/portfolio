@@ -9,10 +9,6 @@ section {
 }
 
 .introduction-box {
-    width: 864.54px;
-    height: 489.96px;
-    // top: 184px;
-    // left: 288px;
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -25,116 +21,60 @@ section {
     transform: translate(-50%, -50%);
 }
 
-.greeting {
+.first-content {
     width: 864.54px;
-    height: 269.96px;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.placeholder_frame609 {
-    width: 552px;
-    height: 240px;
-    top: 29.96px;
-    gap: 32px;
-}
-
-
-.placeholder_hello-name {
-    display: flex;
-    flex-direction: column;
-    width: 145px;
-    height: 80px;
-
-    >img {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        rotate: 180deg;
-        top: 37.9px;
-        left: 142.88px;
-        display: flex;
-        align-self: self-end;
-    }
-
-    >button {
-        width: 145px;
-        height: 40px;
-        border-radius: 100px;
-        border: 1px solid #F8F9FA;
-        padding-top: 12px;
-        padding-right: 24px;
-        padding-bottom: 12px;
-        padding-left: 24px;
-        gap: 10px;
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-
-        >span {
-            width: 97px;
-            height: 22px;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21.6px;
-            color: #F8F9FA;
-
-        }
-    }
-
-    :hover {
-        width: 218px;
-        height: 80px;
-
-        > button {
-            width: 218px;
-            background-color: #3355FF;
-            
-            > span {
-                content: "I'M KARL HOFMANN";
-            }
-        }
-    }
-}
-
-.placeholder-img {
-    width: 203.57px;
+.polaroid {
+    width: 204px;
     height: 244px;
-    position: absolute;
-    top: 5.82px;
-    left: 646.97px;
+    background-image: url('./../../../assets/img/hero/hero/bewerbungsfoto_sw.png');
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
     rotate: 8deg;
-}
+    margin-right: 20px;
+    margin-top: 20px;
+    align-self: flex-start;
 
-.placeholder_frame604 {
-    width: 552px;
-    height: 128px;
+    &:hover {
+        background-image: url('./../../../assets/img/hero/hero/bewerbungsfoto_farbig2.png');
+    }
 
-    >span {
-        height: 128px;
-        gap: 10px;
-        color: #F8F9FA;
-        font-weight: 700px;
-        font-size: 128px;
-        line-height: 128px;
-        transition: color 0.3s ease-in-out, text-transform 0.3s ease-in-out;
+    span {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+        &::before {
+            content: "Philip :)";
+        }
+    }
+
+    &:hover span::before {
+        content: "Philip :D";
     }
 }
 
-.placeholder_frame605 {
-    width: 713px;
-    height: 128px;
+.job,
+.second-content {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 
-    >span {
-        width: 90px;
-        height: 128px;
-        gap: 10px;
-        color: #F8F9FA;
-        font-weight: 700px;
-        font-size: 128px;
-        line-height: 128px;
-    }
+.job span,
+.second-content span {
+    display: inline-block;
+    color: #F8F9FA;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 128px;
+    transition: color 0.3s ease-in-out, text-transform 0.3s ease-in-out;
 }
 
 .uppercase {
@@ -145,30 +85,24 @@ section {
     text-transform: lowercase;
 }
 
-.placeholder_frame604:hover .uppercase:hover {
+.job:hover .uppercase:hover {
     text-transform: lowercase;
     color: #F7C518;
 }
 
-.placeholder_frame604:hover .lowercase:hover {
+.job:hover .lowercase:hover {
     text-transform: uppercase;
     color: #F7C518;
 }
 
-.placeholder_frame605:hover .uppercase:hover {
+.second-content:hover .uppercase:hover {
     text-transform: lowercase;
     color: #F7C518;
 }
 
-
 app-button {
     align-self: flex-end;
 }
-
-
-
-
-
 
 .social-media-box {
     width: 40px;
@@ -186,7 +120,7 @@ app-button {
     gap: 10px;
     text-decoration: none;
 
-    > img {
+    img {
         width: 32px;
         height: 32px;
         border-radius: 100px;

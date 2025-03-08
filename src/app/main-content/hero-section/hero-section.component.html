@@ -2,8 +2,8 @@
     <app-header></app-header>
 
     <div class="introduction-box">
-        <div class="greeting">
-            <div class="placeholder_frame609">
+        <div class="first-content">
+            <div>
                 <app-animated-button
                     class="font-bricolage-grotesque"
                     [text]="'hero.animatedButton.text' | translate"
@@ -11,34 +11,26 @@
                     icon="./../../assets/img/hero/hero/waving_hand.svg">
                 </app-animated-button>
 
-                <div class="placeholder_frame604">
-                    <span class="uppercase font-bricolage-grotesque">F</span>
-                    <span class="lowercase font-bricolage-grotesque">r</span>
-                    <span class="lowercase font-bricolage-grotesque">o</span>
-                    <span class="lowercase font-bricolage-grotesque">n</span>
-                    <span class="lowercase font-bricolage-grotesque">t</span>
-                    <span class="lowercase font-bricolage-grotesque">e</span>
-                    <span class="lowercase font-bricolage-grotesque">n</span>
-                    <span class="lowercase font-bricolage-grotesque">d</span>
+                <div class="job">
+                    <span *ngFor="let letter of 'Frontend'.split('')" 
+                          [class.uppercase]="letter === letter.toUpperCase()" 
+                          [class.lowercase]="letter === letter.toLowerCase()" 
+                          class="font-bricolage-grotesque">
+                        {{ letter }}
+                    </span>
                 </div>
             </div>
 
-            <div>
-                <img class="placeholder-img" src="./../../assets/img/hero/hero/Polaroid-Frame-Mockup copia 1.svg"
-                    alt="">
+            <div class="polaroid">
+                <span class="font-kalam"></span>
             </div>
         </div>
 
-        <div class="placeholder_frame605">
-            <span class="uppercase font-bricolage-grotesque">D</span>
-            <span class="uppercase font-bricolage-grotesque">E</span>
-            <span class="uppercase font-bricolage-grotesque">V</span>
-            <span class="uppercase font-bricolage-grotesque">E</span>
-            <span class="uppercase font-bricolage-grotesque">L</span>
-            <span class="uppercase font-bricolage-grotesque">O</span>
-            <span class="uppercase font-bricolage-grotesque">P</span>
-            <span class="uppercase font-bricolage-grotesque">E</span>
-            <span class="uppercase font-bricolage-grotesque">R</span>
+        <div class="second-content">
+            <span *ngFor="let letter of ('hero.developer' | translate)?.split('')" 
+                  class="uppercase font-bricolage-grotesque">
+                {{ letter }}
+            </span>
         </div>
 
         <app-button class="font-bricolage-grotesque" [text]="'hero.buttonText' | translate" link="#contact" textColor="white"

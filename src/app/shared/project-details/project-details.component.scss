@@ -19,7 +19,7 @@ section {
     padding-right: 72px;
     cursor: pointer;
 
-    >span {
+    span {
         font-weight: 700;
         font-size: 18px;
         line-height: 21.6px;
@@ -38,7 +38,7 @@ section {
     padding-left: 120px;
     padding-right: 120px;
 
-    > .box_left {
+    .box_left {
         width: 488px;
         display: flex;
         flex-direction: column;
@@ -53,14 +53,14 @@ section {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-    
+
                 h3 {
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 24px;
                     margin: 0;
                 }
-    
+
                 p {
                     font-weight: 400;
                     font-size: 18px;
@@ -69,19 +69,19 @@ section {
                     text-align: justify;
                 }
             }
-    
+
             .implementation-details_container {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-    
+
                 h3 {
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 24px;
                     margin: 0;
                 }
-    
+
                 p {
                     font-weight: 400;
                     font-size: 18px;
@@ -94,7 +94,7 @@ section {
             .projectType_container {
                 display: flex;
                 gap: 8px;
-    
+
                 h3 {
                     font-weight: 700;
                     font-size: 18px;
@@ -102,7 +102,7 @@ section {
                     margin: 0;
                     text-align: justify;
                 }
-    
+
                 span {
                     font-weight: 400;
                     font-size: 18px;
@@ -130,7 +130,7 @@ section {
         }
     }
 
-    > .box_right {
+    .box_right {
         width: 560px;
         display: flex;
         flex-direction: column;
@@ -159,7 +159,7 @@ section {
     padding-right: 72px;
     cursor: pointer;
 
-    >span {
+    span {
         font-weight: 700;
         font-size: 18px;
         line-height: 21.6px;

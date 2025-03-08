@@ -18,15 +18,13 @@ section {
     width: 560px;
     display: flex;
     flex-direction: column;
-    // text-align: justify;
     gap: 48px;
-    // margin-bottom: 40px;
 }
 
 .title-container {
     gap: 16px;
 
-    >p {
+    p {
         margin: 0;
         font-weight: 500;
         font-size: 20px;

@@ -10,6 +10,7 @@
             "text": "Hallo Welt",
             "hoverText": "ICH BIN PHILIP BAUMGÄRTNER"
         },
+        "developer": "ENTWICKLER",
         "buttonText": "Kontakt aufnehmen"
     },
     "about": {
@@ -92,13 +93,20 @@
         "form": {
             "nameLabel": "Wie heißen Sie?",
             "namePlaceholder": "Bitte tragen Sie hier Ihren Namen ein",
+            "nameError": "Oops! Es scheint, dass Ihr Name fehlt",
             "emailLabel": "Wie lautet Ihre E-Mailadresse?",
             "emailPlaceholder": "maxmustermann@musterstadt.com",
+            "emailError": "Hoppla! Ihre E-Mailadresse ist notwendig",
+            "emailInvalid": "Ihre E-Mailadresse erfüllt nicht die Anforderungen. Bitte tragen Sie eine gültige E-Mailadresse ein.",
             "messageLabel": "Wie kann ich Ihnen helfen?",
             "messagePlaceholder": "Hallo Philip, ich interessiere mich für...",
-            "privacyText": "Ich habe die <a href='privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+            "messageError": "Was möchten Sie entwickeln?",
+            "privacyTextPart1": "Ich habe die",
+            "privacyTextPart2": "Datenschutzerklärung",
+            "privacyTextPart3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
             "privacyWarning": "Bitte akzeptieren Sie die Datenschutzerklärung.",
-            "buttonText": "Senden"
+            "buttonText": "Senden",
+            "messageSent": "Ihre Nachricht wurde erfolgreich versendet."
         }
     },
     "footer": {

@@ -15,4 +15,7 @@ export class ButtonComponent {
   @Input() target: string = '_self';
   @Input() textColor: string = '#F8F9FA';
   @Input() borderColor: string = '#F8F9FA';
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
+  @Input() disabled: boolean = false;
+  @Input() additionalClasses: string = '';
 }

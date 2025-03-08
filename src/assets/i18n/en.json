@@ -10,6 +10,7 @@
             "text": "Hello World",
             "hoverText": "I'M PHILIP BAUMGÄRTNER"
         },
+        "developer": "DEVELOPER",
         "buttonText": "Get in Touch"
     },
     "about": {
@@ -92,13 +93,20 @@
         "form": {
             "nameLabel": "What's your name?",
             "namePlaceholder": "Your name goes here",
+            "nameError": "Oops! It seems your name is missing",
             "emailLabel": "What's your email?",
             "emailPlaceholder": "youremail@email.com",
+            "emailError": "Hoppla! Your email is required",
+            "emailInvalid": "Your email doesn't match the requirements. Please enter a valid email format.",
             "messageLabel": "How can I help you?",
             "messagePlaceholder": "Hello Philip, I am interested in...",
-            "privacyText": "I've read the <a href='privacy-policy'>privacy policy</a> and agree to the processing of my data as outlined.",
+            "messageError": "What do you need to develop?",
+            "privacyTextPart1": "I've read the",
+            "privacyTextPart2": "privacy policy",
+            "privacyTextPart3": "and agree to the processing of my data as outlined.",
             "privacyWarning": "Please accept the privacy policy.",
-            "buttonText": "Send"
+            "buttonText": "Send",
+            "messageSent": "Your message was sent successfully."
         }
     },
     "footer": {
@@ -147,7 +155,7 @@
             },
             "responsibleBody": {
                 "title": "Note on the responsible body",
-                "content": "The responsible body for data processing on this website is: Philip Baumgärtner, Jurastraße 6, 92353 Postbauer-Heng, Phone: 09188 / 57 77 120, Mail: philip_baumgaertner@hotmail.de. The responsible body is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.)."
+                "content": "The responsible body for data processing on this website is:<br><br>Philip Baumgärtner<br>Jurastraße 6<br>92353 Postbauer-Heng<br><br>Phone: 09188 / 57 77 120<br>Mail: philip_baumgaertner@hotmail.de<br><br>The responsible body is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.)."
             },
             "storagePeriod": {
                 "title": "Storage period",

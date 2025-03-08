@@ -62,7 +62,7 @@ export class ProjectDetailsComponent implements OnInit {
           skills: ['HTML', 'CSS', 'JavaScript', 'Rest-Api'],
           image: 'pokedex.png',
           gitHubLink: '',
-          liveTestLink: '',
+          liveTestLink: 'https://philip-baumgaertner.net/pokedex',
         },
         {
           path: 'join',
@@ -70,10 +70,10 @@ export class ProjectDetailsComponent implements OnInit {
           description: 'projects.join.description',
           implementationDetails: 'projects.join.implementationDetails',
           projectType: 'projects.join.projectType',
-          image: 'join.png',
+          image: 'laptop_join.png',
           skills: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
           gitHubLink: 'https://github.com/DanielWoytitzki/join-project',
-          liveTestLink: '',
+          liveTestLink: 'https://philip-baumgaertner.net/join',
         },
         {
           path: 'el-pollo-loco',
@@ -84,7 +84,7 @@ export class ProjectDetailsComponent implements OnInit {
           image: 'el_pollo_loco.png',
           skills: ['HTML', 'CSS', 'JavaScript'],
           gitHubLink: 'https://github.com/Sessa89/El-Pollo-Loco',
-          liveTestLink: '',
+          liveTestLink: 'https://philip-baumgaertner.net/el-pollo-loco',
         },
         {
           path: 'dabubble',
@@ -95,7 +95,7 @@ export class ProjectDetailsComponent implements OnInit {
           image: 'dabubble.png',
           skills: ['HTML', 'CSS', 'JavaScript'],
           gitHubLink: '',
-          liveTestLink: '',
+          liveTestLink: 'https://philip-baumgaertner.net/dabubble',
         }
       ]
     },

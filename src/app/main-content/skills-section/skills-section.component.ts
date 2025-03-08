@@ -91,6 +91,7 @@ class Peel {
   private cumulativeRotationY = 0;
 
   private MAX_ANGLE = 120;
+  private REMOVE_THRESHOLD = 80;
 
   constructor(private container: HTMLElement) {
     this.top = this.container.querySelector('.sticker-container_top') as HTMLElement;
@@ -130,6 +131,7 @@ class Peel {
 
   private onMouseUp() {
     this.isDragging = false;
+    this.checkRemoval();
   }
 
   private onTouchStart(e: TouchEvent) {
@@ -155,6 +157,7 @@ class Peel {
 
   private onTouchEnd() {
     this.isDragging = false;
+    this.checkRemoval();
   }
 
   private setPeelPosition(dx: number, dy: number) {
@@ -170,5 +173,21 @@ class Peel {
     if (this.cumulativeRotationY < -this.MAX_ANGLE) this.cumulativeRotationY = -this.MAX_ANGLE;
 
     this.top.style.transform = `rotateX(${this.cumulativeRotationX}deg) rotateY(${this.cumulativeRotationY}deg)`;
+  }
+
+  private checkRemoval() {
+    const distance = Math.sqrt(
+      this.cumulativeRotationX * this.cumulativeRotationX +
+      this.cumulativeRotationY * this.cumulativeRotationY
+    );
+
+    if (distance > this.REMOVE_THRESHOLD) {
+      this.top.style.transition = 'opacity 0.5s ease';
+      this.top.style.opacity = '0';
+
+      setTimeout(() => {
+        this.top.style.display = 'none';
+      }, 500);
+    }
   }
 }
