@@ -1,0 +1,78 @@
+<header>
+    <nav [ngClass]="{'hide-nav': isBurgerMenuOpen}">
+        <div class="navbar">
+            <img src="./../../../assets/img/hero/header/logo.svg"
+                onmouseover="this.src='./../../../assets/img/hero/header/logo_hover.svg'"
+                onmouseout="this.src='./../../../assets/img/hero/header/logo.svg'" alt="">
+
+            <img class="burger-menu-icon-inactive" [src]="burgerMenuInactiveSrc" alt="" (mouseover)="hoverBurgerMenu()"
+                (mouseout)="unhoverBurgerMenu()" (touchstart)="hoverBurgerMenu()" (touchend)="unhoverBurgerMenu()"
+                (click)="toggleBurgerMenu()">
+        </div>
+    </nav>
+
+    <div class="burger-menu-content" [class.open]="isBurgerMenuOpen">
+        <div class="burger-menu-content_first-container">
+            <img src="./../../../assets/img/hero/header/logo.svg"
+                onmouseover="this.src='./../../../assets/img/hero/header/logo_hover.svg'"
+                onmouseout="this.src='./../../../assets/img/hero/header/logo.svg'" alt="">
+
+            <img class="burger-menu-icon-active" [src]="burgerMenuActiveSrc" alt="" (mouseover)="hoverBurgerMenu()"
+                (mouseout)="unhoverBurgerMenu()" (touchstart)="hoverBurgerMenu()" (touchend)="unhoverBurgerMenu()"
+                (click)="toggleBurgerMenu()">
+        </div>
+
+        <div class="burger-menu-content_second-container">
+            <a href="#about_me" class="animate-top-to-bottom">
+                <span class="font-bricolage-grotesque">{{ 'header.about' | translate }}</span>
+                <img src="./../../../assets/img/hero/header/B.1b.svg" alt="">
+            </a>
+
+            <a href="#skills" class="animate-left-to-right">
+                <span class="font-bricolage-grotesque">{{ 'header.skills' | translate }}</span>
+                <img src="./../../../assets/img/hero/header/B.2.svg" alt="">
+            </a>
+
+            <a href="#projects" class="animate-left-to-right">
+                <span class="font-bricolage-grotesque">{{ 'header.projects' | translate }}</span>
+                <img src="./../../../assets/img/hero/header/B.3.svg" alt="">
+            </a>
+
+            <a href="#contact" class="animate-left-to-right">
+                <span class="font-bricolage-grotesque">{{ 'header.contact' | translate }}</span>
+                <img src="./../../../assets/img/hero/header/B.4.svg" alt="">
+            </a>
+
+            <div class="language-toggle">
+                <div class="language-toggle-item animate-bottom-right-to-top-left" (click)="toggleLanguage('EN')"
+                    [class.active]="isEnglishActive">
+                    <span id="lang-en" class="language-toggle-button font-bricolage-grotesque"
+                        [class.active]="isEnglishActive">EN</span>
+                    <img class="language-toggle-button-frame frame-en"
+                        src="./../../../assets/img/hero/header/Toggle 1.svg" alt="EN Hover Frame">
+                </div>
+
+                <div class="language-toggle-switch" [class.active]="!isEnglishActive">
+                    <span class="slider round"></span>
+                </div>
+
+                <div class="language-toggle-item animate-top-left-to-bottom-right" (click)="toggleLanguage('DE')"
+                    [class.active]="!isEnglishActive">
+                    <span id="lang-de" class="language-toggle-button font-bricolage-grotesque"
+                        [class.active]="!isEnglishActive">DE</span>
+                    <img style="rotate: 180deg;" class="language-toggle-button-frame frame-de"
+                        src="./../../../assets/img/hero/header/Toggle 1.svg" alt="DE Hover Frame">
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu-content_third-container">
+            <a class="social-media-box-button" href="https://www.linkedin.com/" target="_blank"><img
+                    src="./../../assets/img/shared/icon_linkedin.svg" alt=""></a>
+            <a class="social-media-box-button" href="https://github.com/Sessa89" target="_blank"><img
+                    src="./../../assets/img/shared/icon_github.svg" alt=""></a>
+            <a class="social-media-box-button" href="mailto:philip_baumgaertner@hotmail.de" target="_blank"><img
+                    src="./../../assets/img/shared/icon_mail.svg" alt=""></a>
+        </div>
+    </div>
+</header>
