@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 header {
     padding-top: 19px;
     padding-right: 72px;
@@ -5,26 +7,39 @@ header {
     padding-left: 72px;
     gap: 32px;
 
-    >nav {
+    nav {
         width: 100%;
-        height: 42px;
+        height: 64px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include respond-to-max(xxxl) {
+            height: 42px;
+        }
+    }
+
+    @include respond-to-max(lg) {
+        display: none;
     }
 }
 
 img {
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
+
+    @include respond-to-max(xxxl) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 a {
     text-decoration: none;
     color: #F8F9FA;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 21.6px;
     position: relative;
     display: inline-block;
@@ -32,7 +47,7 @@ a {
     border: none;
     overflow: hidden;
 
-    >img {
+    img {
         position: absolute;
         top: 0;
         left: 0;
@@ -40,28 +55,37 @@ a {
         height: 100%;
     }
 
-    &:hover>img {
+    &:hover img {
         clip-path: inset(0 0 0 0);
+    }
+
+    @include respond-to-max(xxxl) {
+        font-size: 18px;
     }
 }
 
-.animate-top-to-bottom>img {
+.animate-top-to-bottom img {
     clip-path: inset(0 0 100% 0);
     transition: clip-path 0.3s ease-in;
 }
 
-.animate-left-to-right>img {
+.animate-left-to-right img {
     clip-path: inset(0 100% 0 0);
     transition: clip-path 0.3s ease-in;
 }
 
 .language-toggle {
-    width: 104px;
-    height: 32px;
+    width: 120px;
+    height: 64px;
     gap: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond-to-max(xxxl) {
+        width: 104px;
+        height: 32px;
+    }
 }
 
 .language-toggle-item {
@@ -73,7 +97,7 @@ a {
     justify-content: center;
 }
 
-.language-toggle-item > img {
+.language-toggle-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -83,15 +107,15 @@ a {
     transition: clip-path 0.3s ease-in;
 }
 
-.animate-bottom-right-to-top-left:not(.active) > img {
+.animate-bottom-right-to-top-left:not(.active) img {
     clip-path: inset(100% 0 0 100%);
 }
 
-.animate-top-left-to-bottom-right:not(.active) > img {
+.animate-top-left-to-bottom-right:not(.active) img {
     clip-path: inset(100% 0 0 100%);
 }
 
-.language-toggle-item:not(.active):hover > img {
+.language-toggle-item:not(.active):hover img {
     clip-path: inset(0 0 0 0);
 }
 
@@ -99,11 +123,15 @@ a {
     width: 22px;
     height: 19px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19.2px;
     color: #FFFFFF;
     transition: color 0.3s;
     cursor: default;
+
+    @include respond-to-max(xxxl) {
+        font-size: 16px;
+    }
 }
 
 .language-toggle-button.active {

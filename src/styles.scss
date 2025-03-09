@@ -1,3 +1,34 @@
+$breakpoints: (
+    xs: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+    xxxl: 1920px
+);
+
+@mixin respond-to-max($breakpoint-name) {
+    $max: map-get($breakpoints, $breakpoint-name);
+
+    @if $max ==null {
+        @warn "Breakpoint '#{$breakpoint-name}' nicht in der \$breakpoints-Map gefunden.";
+    } @else {
+        @media (max-width: $max) { @content; }
+    }
+}
+
+@mixin respond-between($min-name, $max-name) {
+    $min: map-get($breakpoints, $min-name);
+    $max: map-get($breakpoints, $max-name);
+
+    @if $min ==null or $max ==null {
+        @warn "Breakpoint '#{$min-name}' oder '#{$max-name}' nicht in der \$breakpoints-Map gefunden.";
+    } @else {
+        @media (min-width: ($min + 1px)) and (max-width: $max) { @content; }
+    }
+}
+
 *body {
     margin: 0;
     scroll-behavior: smooth;
