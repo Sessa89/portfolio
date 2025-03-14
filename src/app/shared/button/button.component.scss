@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 .btn {
     position: relative;
     display: inline-flex;
@@ -15,6 +17,10 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
+    @include respond-to-max(xs) {
+        font-size: 16px;
+    }
 
     &::after {
         content: "";

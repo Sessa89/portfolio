@@ -1,10 +1,15 @@
+@import "./../../../styles.scss";
+
 section {
-    height: 900px;
     background-image: url('./../../../assets/img/contact-me/footer_rotated.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include respond-between(xxs, xl) {
+        height: auto;
+    }
 }
 
 .section_content {
@@ -12,7 +17,20 @@ section {
     padding-right: 120px;
     padding-left: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @include respond-between(xxs, xl) {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 88px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 40px;
+    }
+
+    @include respond-between(xl, xxl) {
+        justify-content: space-between;
+    }
 }
 
 .contact-me_content {
@@ -20,6 +38,11 @@ section {
     gap: 48px;
     display: flex;
     flex-direction: column;
+
+    @include respond-between(xxs, xl) {
+        width: 100%;
+        gap: 16px;
+    }
 }
 
 .title-container {
@@ -34,6 +57,11 @@ section {
         font-size: 20px;
         line-height: 20px;
         text-align: left;
+
+        @include respond-between(xxs, xl) {
+            font-size: 18px;
+            line-height: 100%;
+        }
     }
 }
 
@@ -41,12 +69,23 @@ section {
     width: 560px;
     height: 132px;
 
+    @include respond-between(xxs, xl) {
+        width: 100%;
+    }
+
     p {
         margin: 0;
         color: #F8F9FA;
         font-weight: 400;
         font-size: 18px;
         line-height: 21.6px;
+
+        @include respond-between(xxs, xl) {
+            width: 100%;
+            font-size: 18px;
+            line-height: 100%;
+            text-align: justify;
+        }
     }
 }
 
@@ -56,10 +95,19 @@ section {
     padding-top: 128px;
     gap: 40px;
 
+    @include respond-between(xxs, xl) {
+        width: 100%;
+        padding-top: 0;
+    }
+
     form {
         display: flex;
         flex-direction: column;
         width: 480px;
+
+        @include respond-between(xxs, xl) {
+            width: 100%;
+        }
 
         .formular_container {
             display: flex;
@@ -77,6 +125,10 @@ section {
                 font-size: 24px;
                 line-height: 28.8px;
                 color: #F8F9FA;
+
+                @include respond-between(xxs, xl) {
+                    line-height: 120%;
+                }
             }
 
             input {
@@ -87,6 +139,10 @@ section {
                 line-height: 21.6px;
                 color: #F8F9FA;
                 cursor: pointer;
+
+                @include respond-between(xxs, xl) {
+                    line-height: 120%;
+                }
 
                 &::placeholder {
                     font-weight: 400;
@@ -138,6 +194,7 @@ section {
 
                 .privacy-policy_text {
                     display: flex;
+                    align-items: center;
                     gap: 8px;
 
                     .privacy-policy_checkbox {
@@ -218,16 +275,6 @@ section {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     .overlay {
         position: fixed;
         top: 0;
@@ -259,7 +306,7 @@ section {
             font-size: 18px;
             line-height: 21.6px;
         }
-        
+
         app-button {
             align-self: flex-end;
         }

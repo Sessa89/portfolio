@@ -15,4 +15,12 @@
         <h3 class="font-bricolage-grotesque">{{ name }}</h3>
         <p class="font-bricolage-grotesque">{{ description }}</p>
     </div>
+
+    <app-button
+        class="font-bricolage-grotesque mobile"
+        [text]="'project.buttonText' | translate"
+        textColor="#0E1013"
+        borderColor="white"
+        (click)="navigateToDetails()"
+    ></app-button>
 </div>

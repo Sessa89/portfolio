@@ -1,5 +1,6 @@
 <section>
     <app-header></app-header>
+    <app-mobile-header></app-mobile-header>
 
     <div class="container_go-back" (click)="goBack()">
         <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
@@ -53,5 +54,17 @@
     <div class="container_next-project" (click)="goToNextProject()">
         <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
         <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
+    </div>
+
+    <div class="container_mobile-nav">
+        <div class="container_go-back mobile" (click)="goBack()">
+            <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
+            <span class="font-bricolage-grotesque">{{ 'projectDetails.goBack' | translate }}</span>
+        </div>
+
+        <div class="container_next-project mobile" (click)="goToNextProject()">
+            <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
+            <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
+        </div>
     </div>
 </section>

@@ -4,13 +4,14 @@ import { AnimatedSubheadingComponent } from '../../shared/animated-subheading/an
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { MobileFooterComponent } from '../../shared/mobile-footer/mobile-footer.component';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-me-section',
   standalone: true,
-  imports: [CommonModule, AnimatedSubheadingComponent, FormsModule, FooterComponent, ButtonComponent, TranslateModule],
+  imports: [CommonModule, AnimatedSubheadingComponent, FormsModule, FooterComponent, MobileFooterComponent, ButtonComponent, TranslateModule],
   templateUrl: './contact-me-section.component.html',
   styleUrl: './contact-me-section.component.scss'
 })

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
+import { MobileHeaderComponent } from '../mobile-header/mobile-header.component';
 import { AnimatedSubheadingComponent } from '../animated-subheading/animated-subheading.component';
 import { ButtonComponent } from '../button/button.component';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -9,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-project-details',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, AnimatedSubheadingComponent, ButtonComponent, TranslateModule],
+  imports: [CommonModule, HeaderComponent, MobileHeaderComponent, AnimatedSubheadingComponent, ButtonComponent, TranslateModule],
   templateUrl: './project-details.component.html',
   styleUrl: './project-details.component.scss'
 })

@@ -1,10 +1,22 @@
+@import "./../../../styles.scss";
+
 section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 144px;
     padding-right: 120px;
     padding-bottom: 144px;
     padding-left: 120px;
+
+    @include respond-between(xxs, xl) {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 88px;
+        padding-right: 16px;
+        padding-bottom: 88px;
+        padding-left: 16px;
+    }
 }
 
 .about-me_location {
@@ -14,6 +26,10 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include respond-between(xxs, xl) {
+        width: 100%;
+    }
 }
 
 .location-container {
@@ -30,9 +46,24 @@ section {
     z-index: 2;
     gap: 16px;
 
+    @include respond-between(xxs, md) {
+        width: 100vw;
+        height: 128px;
+        top: 60px;
+        gap: 8px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     img {
         width: 40px;
         height: 40px;
+
+        @include respond-between(xxs, md) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     span {
@@ -40,6 +71,11 @@ section {
         font-size: 24px;
         line-height: 28.8px;
         color: #F8F9FA;
+
+        @include respond-between(xxs, md) {
+            font-size: 20px;
+            line-height: 120%;
+        }
     }
 }
 
@@ -55,9 +91,24 @@ section {
     z-index: 1;
     gap: 16px;
 
+    @include respond-between(xxs, md) {
+        width: 100vw;
+        height: 128px;
+        top: 24px;
+        gap: 8px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     img {
         width: 40px;
         height: 40px;
+
+        @include respond-between(xxs, md) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     span {
@@ -65,6 +116,11 @@ section {
         font-size: 24px;
         line-height: 28.8px;
         color: #F8F9FA;
+
+        @include respond-between(xxs, md) {
+            font-size: 20px;
+            line-height: 120%;
+        }
     }
 }
 
@@ -82,9 +138,24 @@ section {
     bottom: 30px;
     gap: 16px;
 
+    @include respond-between(xxs, md) {
+        width: 100vw;
+        height: 128px;
+        bottom: 60px;
+        gap: 8px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     img {
         width: 40px;
         height: 40px;
+
+        @include respond-between(xxs, md) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     span {
@@ -92,6 +163,11 @@ section {
         font-size: 24px;
         line-height: 28.8px;
         color: #F8F9FA;
+
+        @include respond-between(xxs, md) {
+            font-size: 20px;
+            line-height: 120%;
+        }
     }
 }
 
@@ -100,6 +176,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @include respond-to-max(xl) {
+        width: 100%;
+        gap: 32px;
+    }
 }
 
 .title-container {
@@ -111,6 +192,11 @@ section {
         font-size: 20px;
         line-height: 20px;
         color: #0E1013;
+
+        @include respond-between(xxs, md) {
+            font-size: 18px;
+            line-height: 100%;
+        }
     }
 }
 
@@ -126,5 +212,10 @@ section {
         font-size: 20px;
         line-height: 24px;
         color: #0E1013;
+
+        @include respond-between(xxs, md) {
+            font-size: 18px;
+            line-height: 100%;
+        }
     }
 }

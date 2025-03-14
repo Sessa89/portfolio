@@ -8,6 +8,11 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F8F9FA;
+
+    @include respond-to-max(md) {
+        height: auto;
+        padding-bottom: 100px;
+    }
 }
 
 .introduction-box {
@@ -16,11 +21,24 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond-between(xxs, sm) {
+        gap: 16px;
+        max-width: 400px;
+    }
+
+    @include respond-between(xxs, md) {
+        padding-right: 16px;
+        padding-left: 16px;
+        position: static;
+        transform: none;
+        margin: 32px auto;
+        width: 90%;
+    }
 }
 
 .first-content {
@@ -28,6 +46,18 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: end;
+
+    @include respond-between(xxs, md) {
+        width: 100%;
+    }
+}
+
+.animated-button-and-job {
+    @include respond-to-max(xxxxl) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .polaroid {
@@ -41,6 +71,10 @@ section {
     margin-right: 20px;
     margin-top: 20px;
     align-self: flex-start;
+
+    @include respond-to-max(md) {
+        display: none;
+    }
 
     &:hover {
         background-image: url('./../../../assets/img/hero/hero/bewerbungsfoto_farbig2.png');
@@ -60,6 +94,16 @@ section {
     &:hover span::before {
         content: "Philip :D";
     }
+
+    &.mobile {
+        display: none;
+
+        @include respond-to-max(md) {
+            display: flex;
+            justify-self: center;
+            margin: 0 auto;
+        }
+    }
 }
 
 .job,
@@ -77,6 +121,22 @@ section {
     font-size: 128px;
     line-height: 128px;
     transition: color 0.3s ease-in-out, text-transform 0.3s ease-in-out;
+
+    @include respond-to-max(xs) {
+        font-size: 48px;
+    }
+
+    @include respond-between(xs, sm) {
+        font-size: 56px;
+    }
+
+    @include respond-between(sm, md) {
+        font-size: 96px;
+    }
+
+    @include respond-between(xxs, md) {
+        line-height: 100%;
+    }
 }
 
 .uppercase {
@@ -111,12 +171,20 @@ app-button {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 654px;
+    top: 1100px;
     left: 72px;
     gap: 8px;
 
     @include respond-to-max(lg) {
         display: none;
+    }
+
+    @include respond-between(lg, xxl) {
+        top: 700px;
+    }
+
+    @include respond-between(xxl, xxxl) {
+        top: 850px;
     }
 }
 

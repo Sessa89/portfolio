@@ -1,11 +1,13 @@
 $breakpoints: (
+    xxs: 0,
     xs: 320px,
     sm: 576px,
     md: 768px,
     lg: 992px,
     xl: 1200px,
     xxl: 1440px,
-    xxxl: 1920px
+    xxxl: 1920px,
+    xxxxl: 2560px
 );
 
 @mixin respond-to-max($breakpoint-name) {
@@ -33,6 +35,7 @@ $breakpoints: (
     margin: 0;
     scroll-behavior: smooth;
     background-color: #F8F9FA;
+    overflow-x: hidden;
 }
 
 

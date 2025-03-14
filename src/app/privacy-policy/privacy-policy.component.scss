@@ -1,3 +1,5 @@
+@import "./../../styles.scss";
+
 section {
     width: 100%;
     background-color: #0E1013;
@@ -13,10 +15,23 @@ section {
     text-align: justify;
     gap: 24px;
 
+    @include respond-to-max(sm) {
+        height: auto;
+        display: flex;
+        padding-top: 88px;
+        padding-right: 16px;
+        padding-bottom: 88px;
+        padding-left: 16px;
+    }
+
     h1 {
         font-weight: 700;
         font-size: 48px;
         line-height: 48px;
+
+        @include respond-to-max(sm) {
+            font-size: 30px;
+        }
     }
 
     h2 {

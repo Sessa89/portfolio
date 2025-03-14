@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 section {
     display: flex;
     flex-direction: column;
@@ -9,8 +11,11 @@ section {
     padding-right: 120px;
     padding-left: 120px;
 
-    @media (max-width: 768px) {
-        padding: 30px 15px;
+    @include respond-to-max(lg) {
+        padding-top: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 40px;
     }
 }
 
@@ -19,6 +24,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @include respond-to-max(lg) {
+        width: 100%;
+        gap: 32px;
+    }
 }
 
 .title-container {
@@ -30,6 +40,11 @@ section {
         font-size: 20px;
         line-height: 20px;
         color: #0E1013;
+
+        @include respond-to-max(lg) {
+            font-size: 18px;
+            line-height: 100%;
+        }
     }
 }
 
@@ -43,19 +58,25 @@ section {
     font-size: 18px;
     line-height: 21.6px;
     color: #0E1013;
+
+    @include respond-to-max(lg) {
+        font-size: 18px;
+        line-height: 100%;
+        text-align: justify;
+    }
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 80px;
     justify-content: center;
     width: 100%;
     max-width: 1000px;
 
-    @media (max-width: 1024px) {
+    @include respond-to-max(lg) {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 32px;
     }
 }
 

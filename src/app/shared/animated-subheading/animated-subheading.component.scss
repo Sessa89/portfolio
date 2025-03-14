@@ -1,9 +1,16 @@
+@import "./../../../styles.scss";
+
 .animated-subheading {
     position: relative;
     display: inline-block;
     font-size: 64px;
     font-weight: 700;
     gap: 4px;
+
+    @include respond-to-max(sm) {
+        font-size: 48px;
+        line-height: 100%;
+    }
 
     .animation {
         position: absolute;

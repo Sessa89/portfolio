@@ -243,5 +243,6 @@ header {
 
     @include respond-to-max(lg) {
         display: flex;
+        height: 64px;
     }
 }

@@ -1,27 +1,57 @@
+@import "./../../../styles.scss";
+
 section {
-    // width: auto;
     height: 800px;
     background-image: url('./../../../assets/img/skills/bg-img.png');
     background-size: cover;
-    // background-repeat: no-repeat;
     background-position: center;
     background-color: #F8F9FA;
     padding-top: 144px;
     padding-right: 120px;
     padding-bottom: 144px;
     padding-left: 120px;
-    // gap: 350px;
+
+    @include respond-between(xxs, lg) {
+        height: auto;
+        gap: 350px;
+    }
+
+    @include respond-between(xxs, xl) {
+        display: flex;
+        padding-top: 88px;
+        padding-right: 16px;
+        padding-bottom: 88px;
+        padding-left: 16px;
+    }
 }
 
 .skills-content {
     gap: 48px;
     display: flex;
     flex-direction: column;
+
+    @include respond-between(xxs, lg) {
+        gap: 40px;
+    }
+
+    @include respond-between(xxs, xl) {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+
+    @include respond-between(xxl, xxxxl) {
+        align-items: center;
+    }
 }
 
 .title-content {
     display: flex;
     gap: 48px;
+
+    @include respond-between(xxs, lg) {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .title-container {
@@ -34,6 +64,15 @@ section {
         font-size: 20px;
         line-height: 20px;
         text-align: right;
+
+        @include respond-between(xxs, xl) {
+            font-size: 18px;
+            line-height: 100%;
+        }
+    }
+
+    @include respond-between(xxs, xl) {
+        text-align: right;
     }
 }
 
@@ -45,12 +84,36 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
 
+    @include respond-to-max(sm) {
+        width: 100%;
+        height: auto;
+    }
+
+    @include respond-between(sm, xl) {
+        align-self: center;
+    }
+
+    @include respond-between(xxs, xl) {
+        gap: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
     p {
         margin: 0;
         font-weight: 400;
         font-size: 18px;
         line-height: 21.6px;
         padding: 32px;
+
+        @include respond-between(xxs, xl) {
+            font-size: 18px;
+            line-height: 100%;
+            padding-top: 40px;
+            padding-right: 16px;
+            padding-bottom: 40px;
+            padding-left: 16px;
+        }
     }
 }
 
@@ -61,6 +124,10 @@ section {
     justify-content: center;
     align-self: center;
     gap: 32px;
+
+    @include respond-to-max(sm) {
+        gap: 0;
+    }
 
     .skill-icon-item {
         width: 90px;
@@ -75,6 +142,11 @@ section {
             width: 72px;
             height: 72px;
             position: relative;
+
+            @include respond-between(xxs, md) {
+                width: 64px;
+                height: 64px;
+            }
         }
 
         img {
@@ -85,6 +157,15 @@ section {
             top: 0;
             left: 0;
             transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, filter 0.3s ease;
+
+            @include respond-between(xxs, md) {
+                width: 64px;
+                height: 64px;
+            }
+
+            @include respond-between(xxs, xl) {
+                filter: grayscale(0);
+            }
         }
 
         .skill-icon-label {
@@ -106,12 +187,27 @@ section {
             }
         }
     }
+
+    @include respond-to-max(sm) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
 
 .skills {
     display: flex;
     justify-content: flex-end;
     gap: 80px;
+
+    @include respond-between(xxs, md) {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    @include respond-between(md, lg) {
+        justify-content: space-evenly;
+        gap: 0;
+    }
 }
 
 .sticker-container {
@@ -124,6 +220,11 @@ section {
 
     &:active {
         cursor: grabbing;
+    }
+
+    @include respond-between(xxs, md) {
+        align-self: flex-end;
+        margin-right: 20px;
     }
 }
 
@@ -142,7 +243,6 @@ section {
     backface-visibility: hidden;
     transform-origin: bottom left;
     z-index: 2;
-    // transform: rotateX(0deg) rotateY(0deg);
 
     img {
         height: 40px;
