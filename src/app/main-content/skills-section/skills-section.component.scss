@@ -26,9 +26,9 @@ section {
 }
 
 .skills-content {
-    gap: 48px;
     display: flex;
     flex-direction: column;
+    gap: 48px;
 
     @include respond-between(xxs, lg) {
         gap: 40px;
@@ -156,15 +156,11 @@ section {
             position: absolute;
             top: 0;
             left: 0;
-            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, filter 0.3s ease;
+            animation: animatedIcons 1s infinite alternate ease-in-out;
 
             @include respond-between(xxs, md) {
                 width: 64px;
                 height: 64px;
-            }
-
-            @include respond-between(xxs, xl) {
-                filter: grayscale(0);
             }
         }
 
@@ -177,20 +173,23 @@ section {
             text-transform: uppercase;
             display: block;
         }
-
-        &:hover {
-            img {
-                width: 56px;
-                height: 56px;
-                filter: grayscale(0%);
-                transform: translate(8px, 8px);
-            }
-        }
     }
 
     @include respond-to-max(sm) {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+}
+
+@keyframes animatedIcons {
+    0% {
+        transform: scale(1);
+        filter: grayscale(0%);
+    }
+    
+    100% {
+        transform: scale(0.8);
+        filter: grayscale(100%);
     }
 }
 

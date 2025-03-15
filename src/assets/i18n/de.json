@@ -33,11 +33,6 @@
         "title": "MEIN HANDWERK",
         "subheading": "Projekte",
         "content": "Überzeugen Sie sich selbst von meinen bisherigen Projekten, welche sowohl benutzerfreundlich gestaltet als auch mit einem effizienten Code geschrieben worden sind.",
-        "pokedex": {
-            "description": "Bei dieser App handelt es sich um einen Pokédex basierend auf dem japanischen Manga/Anime (Comic/Zeichentrick) Pokémon. Der Pokédex dient hierbei als Register bzw. Übersicht aller Pokémon, die es den Nutzern ermöglicht, Pokémon mit Echtzeit-API-Daten zu suchen und zu filtern.",
-            "implementationDetails": "Bei diesem Projekt handelte es sich um ein Soloprojekt. Das komplette Projekt wurde dementsprechend von mir allein gestaltet und umgesetzt.",
-            "projectType": "Soloprojekt"
-        },
         "join": {
             "description": "Bei dieser App handelt es sich um einen Task Manager, inspiriert vom Kanban-System. Hierbei können Aufgaben erstellt und organisiert werden, in dem sie per Drag & Drop Nutzern und Kategorien zugewiesen werden können.",
             "implementationDetails": "Bei diesem Projekt handelte es sich um ein Gruppenprojekt, dessen Aufgaben und Workflow mit einem Kanban-Board organisiert wurden. Hierbei wurde die Funktionalität des Logins als Nutzer bzw. Gasts, der Registrierung und der Bereich für die Kontakte von mir umgesetzt.",
@@ -47,11 +42,6 @@
             "description": "Bei dieser App handelt es sich um ein Jump and Run Spiel basierend auf einem objektorientierten Ansatz. Hierbei hilfst Du Pepe Münzen und Tabascosoße zu sammeln, um am Ende gegen das verrückte Huhn zu kämpfen.",
             "implementationDetails": "Bei diesem Projekt handelte es sich um ein Soloprojekt. Das komplette Projekt wurde dementsprechend von mir allein gestaltet und umgesetzt.",
             "projectType": "Soloprojekt"
-        },
-        "dabubble": {
-            "description": "Bei dieser App handelt es sich um eine Slack-Klon-App. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Oberfläche, Echtzeit-Messaging und einer robusten Kanalorganisation.",
-            "implementationDetails": "PLATZHALTER",
-            "projectType": "Gruppenprojekt"
         },
         "api-service": {
             "description": "Ein RESTful API-Dienst, der mit Node.js und Express für die Verwaltung der Benutzerauthentifizierung und Datenverarbeitung erstellt wurde.",

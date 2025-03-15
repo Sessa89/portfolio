@@ -12,33 +12,73 @@
         line-height: 100%;
     }
 
-    .animation {
-        position: absolute;
-        bottom: -10px;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
-    }
-
     .left-to-right {
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: left;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        animation: animatedLine 4s ease-in-out infinite;
+        opacity: 1;
     }
 
-    &:hover .left-to-right {
+    .left-to-right-changed {
+        animation: animatedLine 4s ease-in-out infinite;
         opacity: 1;
-        transform: scaleX(1);
     }
 
     .center-out {
+        position: absolute;
+        top: 50%;
         left: 50%;
-        transform: scaleX(0);
-        transform-origin: center;
+        width: 110%;
+        transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        animation: animatedExplosion 4s ease-in-out infinite;
+        opacity: 1;
     }
 
-    &:hover .center-out {
-        opacity: 1;
-        transform: scaleX(1);
+    @keyframes animatedLine {
+        0% {
+            clip-path: inset(0 100% 0 0);
+        }
+
+        40% {
+            clip-path: inset(0 0 0 0);
+        }
+
+        90% {
+            clip-path: inset(0 0 0 0);
+        }
+
+        100% {
+            clip-path: inset(0 100% 0 0);
+        }
+    }
+
+    @keyframes animatedExplosion {
+        0% {
+            clip-path: inset(50% 50% 50% 50%);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        }
+
+        40% {
+            clip-path: inset(0 0 0 0);
+            transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+        }
+
+        60% {
+            clip-path: inset(0 0 0 0);
+            transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+        }
+
+        80% {
+            clip-path: inset(50% 50% 50% 50%);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        }
+
+        100% {
+            clip-path: inset(50% 50% 50% 50%);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        }
     }
 }

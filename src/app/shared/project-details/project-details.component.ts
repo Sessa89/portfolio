@@ -55,17 +55,6 @@ export class ProjectDetailsComponent implements OnInit {
       enabled: true,
       projects: [
         {
-          path: 'pokedex',
-          name: 'Pokédex',
-          description: 'projects.pokedex.description',
-          implementationDetails: 'projects.pokedex.implementationDetails',
-          projectType: 'projects.pokedex.projectType',
-          skills: ['HTML', 'CSS', 'JavaScript', 'Rest-Api'],
-          image: 'pokedex.png',
-          gitHubLink: '',
-          liveTestLink: 'https://philip-baumgaertner.net/pokedex',
-        },
-        {
           path: 'join',
           name: 'Join',
           description: 'projects.join.description',
@@ -86,17 +75,6 @@ export class ProjectDetailsComponent implements OnInit {
           skills: ['HTML', 'CSS', 'JavaScript'],
           gitHubLink: 'https://github.com/Sessa89/El-Pollo-Loco',
           liveTestLink: 'https://philip-baumgaertner.net/el-pollo-loco',
-        },
-        {
-          path: 'dabubble',
-          name: 'DABubble',
-          description: 'projects.dabubble.description',
-          implementationDetails: 'projects.dabubble.implementationDetails',
-          projectType: 'projects.dabubble.projectType',
-          image: 'dabubble.png',
-          skills: ['HTML', 'CSS', 'JavaScript'],
-          gitHubLink: '',
-          liveTestLink: 'https://philip-baumgaertner.net/dabubble',
         }
       ]
     },

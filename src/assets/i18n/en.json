@@ -33,11 +33,6 @@
         "title": "MY CRAFT",
         "subheading": "Projects",
         "content": " Convince yourself of my previous projects, which have been both user-friendly and written with efficient code.",
-        "pokedex": {
-            "description": "This app is a Pokédex based on the Japanese manga/anime (comic/cartoon) Pokémon. The Pokédex serves as a register or overview of all Pokémon, allowing users to search and filter Pokémon with real-time API data.",
-            "implementationDetails": " This project was a solo project. The entire project was designed and executed by myself.",
-            "projectType": "Solo project"
-        },
         "join": {
             "description": "This app is a task manager, inspired by the Kanban system. It allows you to create and organize tasks by using drag-and-drop functions, assign them to users and categories.",
             "implementationDetails": "This project was a group project whose tasks and workflow were organized with a Kanban board. The functionality of login as a user or guest, the registration and the area for contacts was implemented by myself.",
@@ -47,11 +42,6 @@
             "description": " This app is a jump and run game based on an object-oriented approach. Here, you help Pepe collect coins and Tabasco sauce to end up fighting the crazy chicken.",
             "implementationDetails": "This project was a solo project. The entire project was designed and executed by myself.",
             "projectType": "Solo project"
-        },
-        "dabubble": {
-            "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization..",
-            "implementationDetails": "Placeholder",
-            "projectType": "Group project"
         },
         "api-service": {
             "description": "A RESTful API service built with Node.js and Express for managing user authentication and data processing.",

@@ -11,6 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AnimatedSubheadingComponent {
   @Input() text: string = '';
-  @Input() animationType: 'left-to-right' | 'center-out' = 'left-to-right';
+  @Input() animationType: 'left-to-right' | 'left-to-right-changed' | 'center-out' = 'left-to-right';
   @Input() animationFile: string = '';
 }
