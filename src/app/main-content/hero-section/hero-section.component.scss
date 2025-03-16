@@ -193,7 +193,7 @@ app-button {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 1100px;
+    top: 1000px;
     left: 72px;
     gap: 8px;
 
@@ -206,7 +206,7 @@ app-button {
     }
 
     @include respond-between(xxl, xxxl) {
-        top: 850px;
+        top: 750px;
     }
 }
 
