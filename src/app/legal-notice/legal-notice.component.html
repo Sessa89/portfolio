@@ -1,31 +1,33 @@
 <section>
-    <app-header></app-header>
-    <app-mobile-header></app-mobile-header>
+    <div class="container">
+        <app-header></app-header>
+        <app-mobile-header></app-mobile-header>
 
-    <div class="font-bricolage-grotesque legal-notice_content">
-        <h1>{{ 'legalNotice.heading' | translate }}</h1>
+        <div class="font-bricolage-grotesque legal-notice_content">
+            <h1>{{ 'legalNotice.heading' | translate }}</h1>
 
-        <p>
-            Philip Baumgärtner
-            <br>
-            Jurastraße 6
-            <br>
-            92353 Postbauer-Heng
-        </p>
+            <p>
+                Philip Baumgärtner
+                <br>
+                Jurastraße 6
+                <br>
+                92353 Postbauer-Heng
+            </p>
 
-        <h2>{{ 'legalNotice.contact' | translate }}</h2>
+            <h2>{{ 'legalNotice.contact' | translate }}</h2>
 
-        <p>
-            {{ 'legalNotice.phone' | translate }} 09188 / 57 77 120
-            <br>
-            {{ 'legalNotice.email' | translate }} philip_baumgaertner&#64;hotmail.de
-        </p>
+            <p>
+                {{ 'legalNotice.phone' | translate }} 09188 / 57 77 120
+                <br>
+                {{ 'legalNotice.email' | translate }} philip_baumgaertner&#64;hotmail.de
+            </p>
 
-        <p>
-            {{ 'legalNotice.source' | translate }} <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
-        </p>
+            <p>
+                {{ 'legalNotice.source' | translate }} <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
+            </p>
+        </div>
+
+        <app-footer></app-footer>
+        <app-mobile-footer></app-mobile-footer>
     </div>
-
-    <app-footer></app-footer>
-    <app-mobile-footer></app-mobile-footer>
 </section>

@@ -1,70 +1,74 @@
 <section>
-    <app-header></app-header>
-    <app-mobile-header></app-mobile-header>
+    <div class="container">
+        <app-header></app-header>
+        <app-mobile-header></app-mobile-header>
 
-    <div class="container_go-back" (click)="goBack()">
-        <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
-        <span class="font-bricolage-grotesque">{{ 'projectDetails.goBack' | translate }}</span>
-    </div>
-
-    <div class="content" *ngIf="project">
-        <div class="box_left">
-            <app-animated-subheading class="font-bricolage-grotesque" text="{{ project.name }}"
-                animationType="left-to-right" animationFile="assets/img/about-me/ornament_transition.svg">
-            </app-animated-subheading>
-
-            <div class="content_box">
-                <div class="description_container">
-                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.description' | translate }}</h3>
-                    <p class="font-bricolage-grotesque">{{ project.description | translate }}</p>
-                </div>
-
-                <div class="implementation-details_container">
-                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.implementationDetails' | translate }}</h3>
-                    <p class="font-bricolage-grotesque">{{ project.implementationDetails | translate }}</p>
-                </div>
-
-                <div class="projectType_container">
-                    <h3 class="font-bricolage-grotesque">{{ 'projectDetails.projectType' | translate }}</h3><span class="font-bricolage-grotesque">
-                        {{ project.projectType | translate }}</span>
-                </div>
-
-                <div class="skills_container">
-                    <div class="skill_box" *ngFor="let skill of project.skills">
-                        <img [src]="skill.skillIcon" [alt]="skill.skillName + ' icon'">
-                        <span class="font-bricolage-grotesque">{{ skill.skillName }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box_right">
-            <img [src]="'assets/img/projects/' + project.category + '/' + project.image" [alt]="project.name">
-
-            <div class="button_box">
-                <app-button class="font-bricolage-grotesque" text="GitHub" link="{{ project.gitHubLink }}"
-                    target="_blank" textColor="white" borderColor="white"></app-button>
-
-                <app-button class="font-bricolage-grotesque" text="Live Test" link="{{ project.liveTestLink }}" target="_blank"
-                    textColor="white" borderColor="white"></app-button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container_next-project" (click)="goToNextProject()">
-        <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
-        <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
-    </div>
-
-    <div class="container_mobile-nav">
-        <div class="container_go-back mobile" (click)="goBack()">
+        <div class="container_go-back" (click)="goBack()">
             <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
             <span class="font-bricolage-grotesque">{{ 'projectDetails.goBack' | translate }}</span>
         </div>
 
-        <div class="container_next-project mobile" (click)="goToNextProject()">
+        <div class="content" *ngIf="project">
+            <div class="box_left">
+                <app-animated-subheading class="font-bricolage-grotesque" text="{{ project.name }}"
+                    animationType="left-to-right" animationFile="assets/img/about-me/ornament_transition.svg">
+                </app-animated-subheading>
+
+                <div class="content_box">
+                    <div class="description_container">
+                        <h3 class="font-bricolage-grotesque">{{ 'projectDetails.description' | translate }}</h3>
+                        <p class="font-bricolage-grotesque">{{ project.description | translate }}</p>
+                    </div>
+
+                    <div class="implementation-details_container">
+                        <h3 class="font-bricolage-grotesque">{{ 'projectDetails.implementationDetails' | translate }}
+                        </h3>
+                        <p class="font-bricolage-grotesque">{{ project.implementationDetails | translate }}</p>
+                    </div>
+
+                    <div class="projectType_container">
+                        <h3 class="font-bricolage-grotesque">{{ 'projectDetails.projectType' | translate }}</h3><span
+                            class="font-bricolage-grotesque">
+                            {{ project.projectType | translate }}</span>
+                    </div>
+
+                    <div class="skills_container">
+                        <div class="skill_box" *ngFor="let skill of project.skills">
+                            <img [src]="skill.skillIcon" [alt]="skill.skillName + ' icon'">
+                            <span class="font-bricolage-grotesque">{{ skill.skillName }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_right">
+                <img [src]="'assets/img/projects/' + project.category + '/' + project.image" [alt]="project.name">
+
+                <div class="button_box">
+                    <app-button class="font-bricolage-grotesque" text="GitHub" link="{{ project.gitHubLink }}"
+                        target="_blank" textColor="white" borderColor="white"></app-button>
+
+                    <app-button class="font-bricolage-grotesque" text="Live Test" link="{{ project.liveTestLink }}"
+                        target="_blank" textColor="white" borderColor="white"></app-button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_next-project" (click)="goToNextProject()">
             <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
             <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
+        </div>
+
+        <div class="container_mobile-nav">
+            <div class="container_go-back mobile" (click)="goBack()">
+                <img src="./../../../assets/img/shared/arrow-left_orange.png" alt="">
+                <span class="font-bricolage-grotesque">{{ 'projectDetails.goBack' | translate }}</span>
+            </div>
+
+            <div class="container_next-project mobile" (click)="goToNextProject()">
+                <span class="font-bricolage-grotesque">{{ 'projectDetails.nextProject' | translate }}</span>
+                <img src="./../../../assets/img/shared/arrow-right_yellow.png" alt="">
+            </div>
         </div>
     </div>
 </section>

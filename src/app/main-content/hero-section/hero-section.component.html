@@ -1,52 +1,55 @@
 <section>
-    <app-header></app-header>
-    <app-mobile-header></app-mobile-header>
+    <div class="container">
+        <app-header></app-header>
+        <app-mobile-header></app-mobile-header>
 
-    <div class="introduction-box">
-        <div class="first-content">
-            <div class="animated-button-and-job">
-                <app-animated-button
-                    class="font-bricolage-grotesque"
-                    [text]="'hero.animatedButton.text' | translate"
-                    [hoverText]="'hero.animatedButton.hoverText' | translate"
-                    icon="./../../assets/img/hero/hero/waving_hand.svg">
-                </app-animated-button>
+        <div class="introduction-box">
+            <div class="first-content">
+                <div class="animated-button-and-job">
+                    <app-animated-button class="font-bricolage-grotesque"
+                        [text]="'hero.animatedButton.text' | translate"
+                        [hoverText]="'hero.animatedButton.hoverText' | translate"
+                        icon="./../../assets/img/hero/hero/waving_hand.svg">
+                    </app-animated-button>
 
-                <div class="job">
-                    <span *ngFor="let letter of 'Frontend'.split('')" 
-                          [class.uppercase]="letter === letter.toUpperCase()" 
-                          [class.lowercase]="letter === letter.toLowerCase()" 
-                          class="font-bricolage-grotesque">
-                        {{ letter }}
-                    </span>
+                    <div class="job">
+                        <span *ngFor="let letter of 'Frontend'.split('')"
+                            [class.uppercase]="letter === letter.toUpperCase()"
+                            [class.lowercase]="letter === letter.toLowerCase()" class="font-bricolage-grotesque">
+                            {{ letter }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <span class="font-kalam"></span>
                 </div>
             </div>
 
-            <div class="polaroid">
+            <div class="second-content">
+                <span *ngFor="let letter of ('hero.developer' | translate)?.split('')"
+                    class="uppercase font-bricolage-grotesque">
+                    {{ letter }}
+                </span>
+            </div>
+
+            <app-button class="font-bricolage-grotesque" [text]="'hero.buttonText' | translate" link="#contact"
+                textColor="white" borderColor="white"></app-button>
+        </div>
+
+        <div>
+            <div class="polaroid mobile">
                 <span class="font-kalam"></span>
             </div>
         </div>
 
-        <div class="second-content">
-            <span *ngFor="let letter of ('hero.developer' | translate)?.split('')" 
-                  class="uppercase font-bricolage-grotesque">
-                {{ letter }}
-            </span>
+        <div class="social-media-box">
+            <a class="social-media-box-button" href="https://www.linkedin.com/" target="_blank"><img
+                    src="./../../assets/img/shared/icon_linkedin.svg" alt=""></a>
+            <a class="social-media-box-button" href="https://github.com/Sessa89" target="_blank"><img
+                    src="./../../assets/img/shared/icon_github.svg" alt=""></a>
+            <a class="social-media-box-button" href="mailto:philip_baumgaertner@hotmail.de" target="_blank"><img
+                    src="./../../assets/img/shared/icon_mail.svg" alt=""></a>
         </div>
-
-        <app-button class="font-bricolage-grotesque" [text]="'hero.buttonText' | translate" link="#contact" textColor="white"
-            borderColor="white"></app-button>
-    </div>
-
-    <div>
-        <div class="polaroid mobile">
-            <span class="font-kalam"></span>
-        </div>
-    </div>
-    
-    <div class="social-media-box">
-        <a class="social-media-box-button" href="https://www.linkedin.com/" target="_blank"><img src="./../../assets/img/shared/icon_linkedin.svg" alt=""></a>
-        <a class="social-media-box-button" href="https://github.com/Sessa89" target="_blank"><img src="./../../assets/img/shared/icon_github.svg" alt=""></a>
-        <a class="social-media-box-button" href="mailto:philip_baumgaertner@hotmail.de" target="_blank"><img src="./../../assets/img/shared/icon_mail.svg" alt=""></a>
     </div>
 </section>

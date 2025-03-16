@@ -9,6 +9,7 @@ section {
     margin: 0 auto;
     padding-top: 144px;
     padding-right: 120px;
+    padding-bottom: 144px;
     padding-left: 120px;
 
     @include respond-to-max(lg) {
@@ -17,6 +18,16 @@ section {
         padding-left: 16px;
         gap: 40px;
     }
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .projects_content {
@@ -77,8 +88,9 @@ section {
     width: 100%;
     max-width: 1000px;
 
-    @include respond-to-max(lg) {
-        grid-template-columns: 1fr;
+    @include respond-to-max(xl) {
+        display: flex;
+        flex-direction: column;
         gap: 32px;
     }
 }

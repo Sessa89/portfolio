@@ -23,6 +23,16 @@ section {
         padding-bottom: 88px;
         padding-left: 16px;
     }
+
+    @include respond-between(xxl, xxxxl) {
+        height: auto;
+    }
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .skills-content {
@@ -85,7 +95,6 @@ section {
     background-repeat: no-repeat;
 
     @include respond-to-max(sm) {
-        width: 100%;
         height: auto;
     }
 
@@ -94,6 +103,7 @@ section {
     }
 
     @include respond-between(xxs, xl) {
+        width: 100%;
         gap: 10px;
         background-size: cover;
         background-position: center;
@@ -127,6 +137,10 @@ section {
 
     @include respond-to-max(sm) {
         gap: 0;
+    }
+
+    @include respond-to-max(md) {
+        width: 100%;
     }
 
     .skill-icon-item {

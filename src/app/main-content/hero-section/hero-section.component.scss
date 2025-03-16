@@ -1,18 +1,25 @@
 @import "./../../../styles.scss";
 
 section {
-    height: 100vh;
+    position: relative;
     width: 100%;
+    height: 100vh;
     background-image: url('./../../../assets/img/hero/hero/12\ Isolated\ Paper\ Rips\ copia.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F8F9FA;
 
-    @include respond-to-max(md) {
+    @include respond-to-max(lg) {
         height: auto;
         padding-bottom: 100px;
     }
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .introduction-box {
@@ -35,6 +42,15 @@ section {
         padding-right: 16px;
         padding-left: 16px;
         position: static;
+        transform: translate(-1%, 0%);
+        margin: 32px auto;
+        width: 90%;
+    }
+
+    @include respond-between(md, lg) {
+        padding-right: 16px;
+        padding-left: 16px;
+        position: static;
         transform: none;
         margin: 32px auto;
         width: 90%;
@@ -47,7 +63,7 @@ section {
     justify-content: space-between;
     align-items: end;
 
-    @include respond-between(xxs, md) {
+    @include respond-between(xxs, lg) {
         width: 100%;
     }
 }
@@ -72,7 +88,7 @@ section {
     margin-top: 20px;
     align-self: flex-start;
 
-    @include respond-to-max(md) {
+    @include respond-to-max(lg) {
         display: none;
     }
 
@@ -98,7 +114,7 @@ section {
     &.mobile {
         display: none;
 
-        @include respond-to-max(md) {
+        @include respond-to-max(lg) {
             display: flex;
             justify-self: center;
             margin: 0 auto;
@@ -123,16 +139,22 @@ section {
     transition: color 0.3s ease-in-out, text-transform 0.3s ease-in-out;
 
     @include respond-to-max(xs) {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     @include respond-between(xs, sm) {
-        font-size: 56px;
+        font-size: 48px;
     }
 
+    @include respond-between(sm, lg) {
+        font-size: 80px;
+    }
+
+    /*
     @include respond-between(sm, md) {
         font-size: 96px;
     }
+    */
 
     @include respond-between(xxs, md) {
         line-height: 100%;
@@ -170,7 +192,7 @@ app-button {
     width: 40px;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 1100px;
     left: 72px;
     gap: 8px;

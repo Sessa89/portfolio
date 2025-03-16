@@ -23,6 +23,15 @@ section {
     }
 }
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
 .container_go-back {
     display: flex;
     justify-content: flex-start;

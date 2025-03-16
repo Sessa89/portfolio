@@ -1,98 +1,102 @@
 <section>
-    <div class="section_content">
-        <div class="contact-me_content">
-            <div class="title-container">
-                <p class="font-bricolage-grotesque">{{ 'contact.title' | translate }}</p>
+    <div class="container">
+        <div class="section_content">
+            <div class="contact-me_content">
+                <div class="title-container">
+                    <p class="font-bricolage-grotesque">{{ 'contact.title' | translate }}</p>
 
-                <app-animated-subheading class="font-bricolage-grotesque" [text]="'contact.subheading' | translate"
-                    animationType="left-to-right-changed" animationFile="assets/img/contact-me/Line.png">
-                </app-animated-subheading>
+                    <app-animated-subheading class="font-bricolage-grotesque" [text]="'contact.subheading' | translate"
+                        animationType="left-to-right-changed" animationFile="assets/img/contact-me/Line.png">
+                    </app-animated-subheading>
+                </div>
+
+                <div class="content">
+                    <p class="font-bricolage-grotesque">
+                        {{ 'contact.content' | translate }}
+                    </p>
+                </div>
             </div>
 
-            <div class="content">
-                <p class="font-bricolage-grotesque">
-                    {{ 'contact.content' | translate }}
-                </p>
+            <div class="formular_content">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+                    <div class="formular_container">
+                        <label class="font-bricolage-grotesque" for="name">{{ 'contact.form.nameLabel' | translate
+                            }}</label>
+                        <input class="font-bricolage-grotesque" #name="ngModel" [(ngModel)]="contactData.name"
+                            type="text" id="name" name="name" [placeholder]="
+                                !name.valid && name.touched
+                                    ? ('contact.form.nameError' | translate)
+                                    : ('contact.form.namePlaceholder' | translate)
+                                " required>
+                    </div>
+
+                    <div class="formular_container">
+                        <label class="font-bricolage-grotesque" for="email">{{ 'contact.form.emailLabel' | translate
+                            }}</label>
+                        <input class="font-bricolage-grotesque" #email="ngModel" [(ngModel)]="contactData.email"
+                            type="email" id="email" name="email" [placeholder]="
+                                !email.valid && email.touched
+                                    ? ('contact.form.emailError' | translate)
+                                    : ('contact.form.emailPlaceholder' | translate)
+                                " required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                            (focus)="emailFocused.set(true)" (blur)="emailFocused.set(false)">
+
+                        @if(email.touched && email.value && !emailFocused() && email.errors?.['pattern']) {
+                        <div class="font-bricolage-grotesque invalid-email">
+                            {{ 'contact.form.emailInvalid' | translate }}
+                        </div>
+                        }
+                    </div>
+
+                    <div class="formular_container">
+                        <label class="font-bricolage-grotesque" for="message">{{ 'contact.form.messageLabel' | translate
+                            }}</label>
+                        <input class="font-bricolage-grotesque" #message="ngModel" [(ngModel)]="contactData.message"
+                            id="message" name="message" [placeholder]="
+                                !message.valid && message.touched
+                                    ? ('contact.form.messageError' | translate)
+                                    : ('contact.form.messagePlaceholder' | translate)
+                                " required>
+                    </div>
+
+                    <div class="privacy-policy_container">
+                        <div class="privacy-policy_content">
+                            <div class="privacy-policy_text">
+                                <input class="privacy-policy_checkbox" #privacyPolicy="ngModel" type="checkbox"
+                                    id="privacyPolicy" name="privacyPolicy" [(ngModel)]="privacyPolicyChecked" />
+
+                                <label class="font-bricolage-grotesque" for="privacyPolicy">
+                                    {{ 'contact.form.privacyTextPart1' | translate }}
+                                    <a href='privacy-policy'>{{ 'contact.form.privacyTextPart2' | translate }}</a>
+                                    {{ 'contact.form.privacyTextPart3' | translate }}
+                                </label>
+                            </div>
+
+                            <div class="privacy-policy_warning" [ngClass]="{'visible': showPrivacyWarning()}">
+                                <p class="font-karla">{{ 'contact.form.privacyWarning' | translate }}</p>
+                            </div>
+                        </div>
+
+                        <app-button class="font-bricolage-grotesque" [text]="'contact.form.buttonText' | translate"
+                            textColor="#F8F9FA" borderColor="#F8F9FA" [class.form-valid]="contactForm.valid"
+                            type="submit"></app-button>
+
+                    </div>
+                </form>
+
+                <div *ngIf="messageSent()" class="overlay">
+                    <div class="font-bricolage-grotesque message-box">
+                        <p>{{ "contact.form.messageSent" | translate }}</p>
+
+                        <app-button (click)="closeDialog(contactForm)" class="font-bricolage-grotesque" [text]="'Ok'"
+                            textColor="white" borderColor="white"></app-button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="formular_content">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
-                <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="name">{{ 'contact.form.nameLabel' | translate
-                        }}</label>
-                    <input class="font-bricolage-grotesque" #name="ngModel" [(ngModel)]="contactData.name" type="text"
-                        id="name" name="name" [placeholder]="
-                            !name.valid && name.touched
-                                ? ('contact.form.nameError' | translate)
-                                : ('contact.form.namePlaceholder' | translate)
-                            " required>
-                </div>
-
-                <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="email">{{ 'contact.form.emailLabel' | translate
-                        }}</label>
-                    <input class="font-bricolage-grotesque" #email="ngModel" [(ngModel)]="contactData.email"
-                        type="email" id="email" name="email" [placeholder]="
-                            !email.valid && email.touched
-                                ? ('contact.form.emailError' | translate)
-                                : ('contact.form.emailPlaceholder' | translate)
-                            " required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                        (focus)="emailFocused.set(true)" (blur)="emailFocused.set(false)">
-
-                    @if(email.touched && email.value && !emailFocused() && email.errors?.['pattern']) {
-                    <div class="font-bricolage-grotesque invalid-email">
-                        {{ 'contact.form.emailInvalid' | translate }}
-                    </div>
-                    }
-                </div>
-
-                <div class="formular_container">
-                    <label class="font-bricolage-grotesque" for="message">{{ 'contact.form.messageLabel' | translate
-                        }}</label>
-                    <input class="font-bricolage-grotesque" #message="ngModel" [(ngModel)]="contactData.message"
-                        id="message" name="message" [placeholder]="
-                            !message.valid && message.touched
-                                ? ('contact.form.messageError' | translate)
-                                : ('contact.form.messagePlaceholder' | translate)
-                            " required>
-                </div>
-
-                <div class="privacy-policy_container">
-                    <div class="privacy-policy_content">
-                        <div class="privacy-policy_text">
-                            <input class="privacy-policy_checkbox" #privacyPolicy="ngModel" type="checkbox"
-                                id="privacyPolicy" name="privacyPolicy" [(ngModel)]="privacyPolicyChecked"/>
-
-                            <label class="font-bricolage-grotesque" for="privacyPolicy">
-                                {{ 'contact.form.privacyTextPart1' | translate }}
-                                <a href='privacy-policy'>{{ 'contact.form.privacyTextPart2' | translate }}</a>
-                                {{ 'contact.form.privacyTextPart3' | translate }}
-                            </label>
-                        </div>
-
-                        <div class="privacy-policy_warning" [ngClass]="{'visible': showPrivacyWarning()}">
-                            <p class="font-karla">{{ 'contact.form.privacyWarning' | translate }}</p>
-                        </div>
-                    </div>
-
-                    <app-button class="font-bricolage-grotesque" [text]="'contact.form.buttonText' | translate"
-                        textColor="#F8F9FA" borderColor="#F8F9FA" [class.form-valid]="contactForm.valid" type="submit"></app-button>
-
-                </div>
-            </form>
-
-            <div *ngIf="messageSent()" class="overlay">
-                <div class="font-bricolage-grotesque message-box">
-                    <p>{{ "contact.form.messageSent" | translate }}</p>
-
-                    <app-button (click)="closeDialog(contactForm)" class="font-bricolage-grotesque" [text]="'Ok'" textColor="white" borderColor="white"></app-button>
-                </div>
-            </div>
-        </div>
+        <app-footer></app-footer>
+        <app-mobile-footer></app-mobile-footer>
     </div>
-
-    <app-footer></app-footer>
-    <app-mobile-footer></app-mobile-footer>
 </section>

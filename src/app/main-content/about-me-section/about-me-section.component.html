@@ -1,37 +1,39 @@
 <section>
-    <div class="about-me_location">
-        <div class="location-container">
-            <img src="./../../assets/img/about-me/icon_location.svg" alt="">
-            <span class="font-bricolage-grotesque">{{ 'about.location' | translate }}</span>
+    <div class="container">
+        <div class="about-me_location">
+            <div class="location-container">
+                <img src="./../../assets/img/about-me/icon_location.svg" alt="">
+                <span class="font-bricolage-grotesque">{{ 'about.location' | translate }}</span>
+            </div>
+
+            <div class="relocation-container">
+                <img src="./../../../assets/img/about-me/icon_relocation.svg" alt="">
+                <span class="font-bricolage-grotesque">{{ 'about.relocation' | translate }}</span>
+            </div>
+
+            <div class="remote-container">
+                <img src="./../../../assets/img/about-me/icon_remote.svg" alt="">
+                <span class="font-bricolage-grotesque">{{ 'about.remote' | translate }}</span>
+            </div>
         </div>
 
-        <div class="relocation-container">
-            <img src="./../../../assets/img/about-me/icon_relocation.svg" alt="">
-            <span class="font-bricolage-grotesque">{{ 'about.relocation' | translate }}</span>
-        </div>
+        <div class="about-me_content">
+            <div class="title-container">
+                <p class="font-bricolage-grotesque">{{ 'about.title' | translate }}</p>
 
-        <div class="remote-container">
-            <img src="./../../../assets/img/about-me/icon_remote.svg" alt="">
-            <span class="font-bricolage-grotesque">{{ 'about.remote' | translate }}</span>
-        </div>
-    </div>
+                <app-animated-subheading class="font-bricolage-grotesque" [text]="'about.subheading' | translate"
+                    animationType="left-to-right" animationFile="assets/img/about-me/ornament_transition.svg">
+                </app-animated-subheading>
+            </div>
 
-    <div class="about-me_content">
-        <div class="title-container">
-            <p class="font-bricolage-grotesque">{{ 'about.title' | translate }}</p>
+            <div class="content-container">
+                <p class="font-bricolage-grotesque">
+                    {{ 'about.content' | translate }}
+                </p>
 
-            <app-animated-subheading class="font-bricolage-grotesque" [text]="'about.subheading' | translate" animationType="left-to-right"
-                animationFile="assets/img/about-me/ornament_transition.svg">
-            </app-animated-subheading>
-        </div>
-
-        <div class="content-container">
-            <p class="font-bricolage-grotesque">
-                {{ 'about.content' | translate }}
-            </p>
-
-            <app-button class="font-bricolage-grotesque" [text]="'about.buttonText' | translate" link="#contact" textColor="black"
-                borderColor="black"></app-button>
+                <app-button class="font-bricolage-grotesque" [text]="'about.buttonText' | translate" link="#contact"
+                    textColor="black" borderColor="black"></app-button>
+            </div>
         </div>
     </div>
 </section>

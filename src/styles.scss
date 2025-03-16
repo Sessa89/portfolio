@@ -4,7 +4,7 @@ $breakpoints: (
     sm: 576px,
     md: 768px,
     lg: 992px,
-    xl: 1200px,
+    xl: 1215px,
     xxl: 1440px,
     xxxl: 1920px,
     xxxxl: 2560px
@@ -35,14 +35,11 @@ $breakpoints: (
     margin: 0;
     scroll-behavior: smooth;
     background-color: #F8F9FA;
-    overflow-x: hidden;
 }
-
 
 .no-scroll {
     overflow: hidden;
 }
-
 
 /* bricolage-grotesque-200-normal */
 @font-face {

@@ -113,6 +113,11 @@
         background: #3355FF;
         opacity: 0;
         transition: opacity 0.3s;
+
+        @include respond-to-max(sm) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
     }
 
     &:hover .hover-text {

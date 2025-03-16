@@ -1,26 +1,25 @@
 <section>
-    <div class="projects_content">
-        <div class="title-container">
-            <p class="font-bricolage-grotesque">{{ 'projects.title' | translate }}</p>
+    <div class="container">
+        <div class="projects_content">
+            <div class="title-container">
+                <p class="font-bricolage-grotesque">{{ 'projects.title' | translate }}</p>
 
-            <app-animated-subheading class="font-bricolage-grotesque" [text]="'projects.subheading' | translate" animationType="left-to-right"
-                animationFile="assets/img/projects/ornaments/linea naranja b.png">
-            </app-animated-subheading>
+                <app-animated-subheading class="font-bricolage-grotesque" [text]="'projects.subheading' | translate"
+                    animationType="left-to-right" animationFile="assets/img/projects/ornaments/linea naranja b.png">
+                </app-animated-subheading>
+            </div>
+
+            <p class="font-bricolage-grotesque content-container">
+                {{ 'projects.content' | translate }}
+            </p>
         </div>
 
-        <p class="font-bricolage-grotesque content-container">
-            {{ 'projects.content' | translate }}
-        </p>
-    </div>
-
-    <div class="projects-container">
-        <div *ngFor="let project of projects" class="project-item">
-            <app-project
-                [name]="project.name"
-                [description]="project.description | translate"
-                [image]="getProjectImagePath(project.image, project.category)"
-                [path]="'/projects/' + project.path"
-            ></app-project>
+        <div class="projects-container">
+            <div *ngFor="let project of projects" class="project-item">
+                <app-project [name]="project.name" [description]="project.description | translate"
+                    [image]="getProjectImagePath(project.image, project.category)"
+                    [path]="'/projects/' + project.path"></app-project>
+            </div>
         </div>
     </div>
 </section>
